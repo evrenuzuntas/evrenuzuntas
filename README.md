@@ -1,8 +1,5 @@
 EVREN UZUNTAS 
-
 SOFTWARE DEVELOPER
-
-
 EXPERIENCE
 
 
@@ -35,6 +32,7 @@ BRITISH CULTURE
 
 
 LICENSES & CERTIFICATIONS
+
 
 10.05.2021
 Introduction to Information Technologies

@@ -1,5 +1,7 @@
 EVREN UZUNTAS SOFTWARE DEVELOPER
 EXPERIENCE
+
+
 Apr 2021 - Ongoing
 FRONT END DEVELOPER AMBEENT INC.
 • Developing front end website and applications for Renault Mais.

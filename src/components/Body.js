@@ -1,6 +1,7 @@
 import { Grid, Typography } from '@mui/material';
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import Experience from './Experience';
 import LanguageButton from './LanguageButton';
 
 
@@ -14,16 +15,19 @@ const Body = (props) => {
 
 
     return (
-        <Grid container>
+        <Grid container >
             <Grid item xs={12}>
                 <Typography>
-                    {t("languageButton")}
+                    {t("")}
                 </Typography>
             </Grid >
-            <Grid item>
-                <LanguageButton >
-                    {t('languageButton')}
-                </LanguageButton>
+            <Grid item xs={12}>
+                <Typography>
+                    {t('job')}
+                </Typography>
+
+                <Experience />
+
             </Grid >
         </Grid >
     )

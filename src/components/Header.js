@@ -14,12 +14,7 @@ const Header = (props) => {
 
 
     return (
-        <Grid container>
-            <Grid item xs={12}>
-                <Typography>
-                    {t("languageButton")}
-                </Typography>
-            </Grid >
+        <Grid container justifyContent="flex-end">
             <Grid item>
                 <LanguageButton >
                     {t('languageButton')}

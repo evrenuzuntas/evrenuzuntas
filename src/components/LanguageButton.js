@@ -20,14 +20,12 @@ function LanguageButton(props) {
         buttonStyle: {
             width: '64px',
             height: '32px',
-            backgroundColor: "#000000",
-            color: "#ffffff",
+            color: "#000000",
 
 
 
             fontSize: "1.3rem",
             "&:hover": {
-                backgroundColor: "#ffffff",
                 color: "#000000",
                 textDecoration: "underline",
             },

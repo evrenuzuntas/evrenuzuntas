@@ -9,6 +9,8 @@ export default {
     tr: {
         translation: {
             languageButton: "TR",
+            nameSurname: "EVREN UZUNTAŞ",
+            job: "YAZILIM GELİŞTİRİCİ",
 
 
         }
@@ -16,6 +18,8 @@ export default {
     en: {
         translation: {
             languageButton: "EN",
+            nameSurname: "EVREN UZUNTAS",
+            job: "SOFTWARE DEVELOPER",
 
         }
     }

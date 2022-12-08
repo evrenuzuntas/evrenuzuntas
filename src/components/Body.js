@@ -3,6 +3,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Experience from './Experience';
 import LanguageButton from './LanguageButton';
+import Left from './Left';
 
 
 
@@ -16,12 +17,10 @@ const Body = (props) => {
 
     return (
         <Grid container >
-            <Grid item xs={12}>
-                <Typography>
-                    {t("")}
-                </Typography>
+            <Grid item xs={4}>
+                <Left />
             </Grid >
-            <Grid item xs={12}>
+            <Grid item xs={8}>
                 <Typography>
                     {t('job')}
                 </Typography>

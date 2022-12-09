@@ -13,7 +13,7 @@ const Index = (props) => {
 
 
     return (
-        <Grid>
+        <Grid sx={{ ...styles.root }}>
             <Header></Header>
             <Body></Body>
         </Grid >
@@ -24,6 +24,12 @@ export default Index;
 
 const styles = {
     root: {
+        maxWidth: "1000px",
+        height: "100vh",
+        backgrounColor: "#232323",
+        border: "1px solid #000000",
+        mx: "auto",
+
 
     },
 

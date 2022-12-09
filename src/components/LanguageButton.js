@@ -15,16 +15,12 @@ function LanguageButton(props) {
 
 
 
-    const { sx } = props
     const style = {
         buttonStyle: {
             width: '64px',
             height: '32px',
             color: "#000000",
-
-
-
-            fontSize: "1.3rem",
+            fontSize: "2rem",
             "&:hover": {
                 color: "#000000",
                 textDecoration: "underline",

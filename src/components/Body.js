@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import Experience from './Experience';
 import LanguageButton from './LanguageButton';
 import Left from './Left';
+import Right from './Right';
 
 
 
@@ -17,15 +18,12 @@ const Body = (props) => {
 
     return (
         <Grid container >
-            <Grid item xs={4}>
+            <Grid item xs={4} sx={{ ...styles.left }}>
                 <Left />
             </Grid >
             <Grid item xs={8}>
-                <Typography>
-                    {t('job')}
-                </Typography>
-
-                <Experience />
+                <Right />
+                {/* <Experience /> */}
 
             </Grid >
         </Grid >
@@ -35,7 +33,9 @@ const Body = (props) => {
 export default Body;
 
 const styles = {
-    root: {
+    left: {
+
+
 
     },
 

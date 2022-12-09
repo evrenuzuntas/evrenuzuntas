@@ -4,7 +4,7 @@ import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 function getTheme() {
     const theme = createTheme({
         typography: {
-            fontFamily: "montserrat"
+            fontFamily: "Roboto"
         },
 
         breakpoints: {

@@ -14,7 +14,7 @@ const Left = (props) => {
 
 
     return (
-        <Grid container >
+        <Grid container sx={{ ...styles.root }}>
             <Grid item
             >
                 <img
@@ -32,6 +32,8 @@ export default Left;
 
 const styles = {
     root: {
+        backgroundColor: "#232323",
+        height: "100vh",
 
     },
 

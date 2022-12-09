@@ -14,10 +14,11 @@ const Left = (props) => {
 
 
     return (
-        <Grid container justifyContent="flex-end">
-            <Grid item>
+        <Grid container >
+            <Grid item
+            >
                 <img
-                    width="300"
+                    width={"400px"}
                     src={"evrenUzuntasVesikalik.jpg"}
                     alt={"Evren_UZUNTAS_vesikalik"}
                     loading="lazy"

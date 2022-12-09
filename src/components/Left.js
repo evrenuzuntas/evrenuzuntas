@@ -18,7 +18,7 @@ const Left = (props) => {
             <Grid item
             >
                 <img
-                    width={"400px"}
+                    width={"100%"}
                     src={"evrenUzuntasVesikalik.jpg"}
                     alt={"Evren_UZUNTAS_vesikalik"}
                     loading="lazy"

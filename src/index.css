@@ -1,13 +1,87 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #000000; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+
+}
+
+/* Disables spinner at the end of the html input element with type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: "NouvelR-Regular";
+  src: url('./assets/fonts/NouvelR-Regular.ttf');
+  /* IE9 Compat Modes */
+  src: local('NouvelR-Regular'), local('NouvelR-Regular'),
+    url("./assets/fonts/NouvelR-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "NouvelR-Bold";
+  src: url('./assets/fonts/NouvelR-Bold.ttf');
+  /* IE9 Compat Modes */
+  src: local('NouvelR-Bold'), local('NouvelR-Bold'),
+    url("./assets/fonts/NouvelR-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "NouvelR-Book";
+  src: url('./assets/fonts/NouvelR-Book.ttf');
+  /* IE9 Compat Modes */
+  src: local('NouvelR-Book'), local('NouvelR-Book'),
+    url("./assets/fonts/NouvelR-Book.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "DaciaBlock-Regular";
+  src: url('./assets/fonts/DaciaBlock-Regular.ttf');
+  /* IE9 Compat Modes */
+  src: local('DaciaBlock-Regular'), local('DaciaBlock-Regular'),
+    url("./assets/fonts/DaciaBlock-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "DaciaBlock-Bold";
+  src: url('./assets/fonts/DaciaBlock-Bold.ttf');
+  /* IE9 Compat Modes */
+  src: local('DaciaBlock-Bold'), local('DaciaBlock-Bold'),
+    url("./assets/fonts/DaciaBlock-Bold.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "DaciaBlock-Light";
+  src: url('./assets/fonts/DaciaBlock-Light.ttf');
+  /* IE9 Compat Modes */
+  src: local('DaciaBlock-Light'), local('DaciaBlock-Light'),
+    url("./assets/fonts/DaciaBlock-Light.ttf") format("truetype");
+  font-weight: normal;
 }

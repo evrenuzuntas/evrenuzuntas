@@ -4,7 +4,7 @@ const DEFAULT_LANGUAGE = 'tr';
 
 const ROUTES = {
     AUSTRAL: 'buyolculuksenin',
-    ASLI: 'asli',
+    EVREN: 'evren',
     INDEX: '/',
     NOT_FOUND: '/404',
     LINK_NOT_FOUND: '/',

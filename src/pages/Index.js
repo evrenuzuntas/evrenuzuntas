@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import { useTranslation } from 'react-i18next';
-import { IMAGES } from '../utils/constants';
-import { Grid, Typography } from '@mui/material';
+import { IMAGES, ROUTES } from '../utils/constants';
+import { Button, Grid, Typography } from '@mui/material';
 
 
 
@@ -18,6 +18,9 @@ const Index = (props) => {
     return (
         <Grid >
             <Typography>asdf</Typography>
+            <Button
+                onClick={() => window.location.replace(`${ROUTES.EVREN}`)}
+            >Evren Page</Button>
         </Grid>
     )
 }

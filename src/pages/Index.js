@@ -2,7 +2,7 @@ import { React, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { IMAGES, ROUTES } from '../utils/constants';
 import { Button, Grid, Typography } from '@mui/material';
-
+import { useNavigate } from "react-router-dom";
 
 
 const Index = (props) => {
@@ -12,14 +12,14 @@ const Index = (props) => {
 
     favicon.href = IMAGES.FAVICON_AUSTRAL
     document.title = ' RENAULT AUSTRAL '
-
+    const navigate = useNavigate();
 
 
     return (
         <Grid >
             <Typography>asdf</Typography>
             <Button
-                onClick={() => window.location.replace(`${ROUTES.EVREN}`)}
+                onClick={() => navigate(`${ROUTES.EVREN}`)}
             >Evren Page</Button>
         </Grid>
     )

@@ -15,6 +15,6 @@ const AppRouter = () => {
 
             <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
-    </BrowserRouter>
+    </BrowserRouter >
 }
 export default AppRouter

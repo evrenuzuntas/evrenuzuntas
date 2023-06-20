@@ -11,7 +11,7 @@ const Index = (props) => {
     const title = document.getElementById("title")
 
     favicon.href = IMAGES.FAVICON_AUSTRAL
-    document.title = ' RENAULT AUSTRAL '
+    document.title = ' EVREN U '
     const navigate = useNavigate();
 
 

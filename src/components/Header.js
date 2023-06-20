@@ -6,6 +6,7 @@ import { Grid, Button } from '@mui/material';
 // Utils
 import { DEFAULT_THEME } from "../utils/theme";
 import { useNavigate } from 'react-router-dom';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Header = (props) => {
     const { t } = useTranslation()
@@ -41,10 +42,11 @@ const Header = (props) => {
                 justifyContent="flex-end"
                 alignItems="center" xs={6}>
 
-                <Button onClick={() => window.open(`https://www.instagram.com/evrnznts.js`)} >
-                    <img src="images/instagram_logo.png" alt="Girl in a jacket" height="50" loading="lazy">
-                    </img>
+                <Button onClick={() => window.open(`https://www.instagram.com/evrnznts.js`)}  >
+
+                    <InstagramIcon sx={{ color: '#ffffff', fontSize: "30px" }} />
                 </Button>
+
 
                 <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>TW</Button>
 

@@ -4,11 +4,13 @@ import { ROUTES } from "../utils/constants";
 import { useTranslation } from 'react-i18next';
 import Index from "../pages/Index";
 import Evren from "../pages/Evren";
+import Header from "../components/Header";
 
 const AppRouter = () => {
     const { t } = useTranslation();
 
     return <BrowserRouter>
+        <Header />
         <Routes>
             <Route exact path={ROUTES.INDEX} element={<Index />} />
             <Route exact path={ROUTES.EVREN} element={<Evren />} />

@@ -32,7 +32,7 @@ const Header = (props) => {
             alignItems="center" sx={{ ...style.root }}>
             {/* Left */}
             <Grid item container xs={6}>
-                <Button sx={{ ...style.leftButton }} onClick={() => navigate(`${ROUTES.INDEX}`)}>Evren U.</Button>
+                <Button disableRipple sx={{ ...style.leftButton }} onClick={() => navigate(`${ROUTES.INDEX}`)}>Evren U.</Button>
             </Grid>
 
             {/* Right */}

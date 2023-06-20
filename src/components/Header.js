@@ -7,6 +7,7 @@ import { Grid, Button } from '@mui/material';
 import { DEFAULT_THEME } from "../utils/theme";
 import { useNavigate } from 'react-router-dom';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { AiFillGithub } from "react-icons/ai";
 
 const Header = (props) => {
     const { t } = useTranslation()
@@ -50,7 +51,9 @@ const Header = (props) => {
 
                 <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>TW</Button>
 
-                <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>GitHub</Button>
+                <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
+                    <AiFillGithub color='#ffffff' fontSize="30px" sx={{}} />
+                </Button>
             </Grid>
         </Grid>
     )

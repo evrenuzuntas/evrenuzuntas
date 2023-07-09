@@ -8,6 +8,7 @@ import { DEFAULT_THEME } from "../utils/theme";
 import { useNavigate } from 'react-router-dom';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { AiFillGithub } from "react-icons/ai";
+import { FiTwitter } from "react-icons/fi";
 
 const Header = (props) => {
     const { t } = useTranslation()
@@ -49,7 +50,9 @@ const Header = (props) => {
                 </Button>
 
 
-                <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>TW</Button>
+                <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
+                    <FiTwitter color='#ffffff' fontSize="30px" sx={{}} />
+                </Button>
 
                 <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
                     <AiFillGithub color='#ffffff' fontSize="30px" sx={{}} />

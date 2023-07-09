@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Asli from "../pages/Asli";
 import Navbar from "../components/Navbar";
 import Communication from "../pages/Communication";
+import NotFound from "../pages/NotFound";
 
 const AppRouter = () => {
     const { t } = useTranslation();
@@ -21,8 +22,9 @@ const AppRouter = () => {
             <Route exact path={ROUTES.EVREN} element={<Evren />} />
             <Route exact path={ROUTES.ASLI} element={<Asli />} />
             <Route exact path={ROUTES.COMMUNICATION} element={<Communication />} />
+            <Route exact path={ROUTES.NOT_FOUND} element={<NotFound />} />
 
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="*" element={<Navigate to="404" replace />} />
         </Routes>
     </BrowserRouter >
 }

@@ -11,7 +11,7 @@ const Evren = (props) => {
     const title = document.getElementById("title")
 
     favicon.href = IMAGES.FAVICON_AUSTRAL
-    document.title = ' RENAULT AUSTRAL '
+    document.title = ' EVREN PAGE '
 
 
 

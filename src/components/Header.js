@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { AiFillGithub } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
+import LanguageButton from './LanguageButton';
 
 const Header = (props) => {
     const { t } = useTranslation()
@@ -45,10 +46,8 @@ const Header = (props) => {
                 alignItems="center" xs={6}>
 
                 <Button onClick={() => window.open(`https://www.instagram.com/evrnznts.js`)}  >
-
                     <InstagramIcon sx={{ color: '#ffffff', fontSize: "30px" }} />
                 </Button>
-
 
                 <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
                     <FiTwitter color='#ffffff' fontSize="30px" sx={{}} />
@@ -57,6 +56,13 @@ const Header = (props) => {
                 <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
                     <AiFillGithub color='#ffffff' fontSize="30px" sx={{}} />
                 </Button>
+
+                {/* Language Button */}
+                <Grid item >
+                    <LanguageButton>
+                        {t('languageButton')}
+                    </LanguageButton>
+                </Grid>
             </Grid>
         </Grid>
     )

@@ -6,12 +6,14 @@ import Index from "../pages/Index";
 import Evren from "../pages/Evren";
 import Header from "../components/Header";
 import Asli from "../pages/Asli";
+import Navbar from "../components/Navbar";
 
 const AppRouter = () => {
     const { t } = useTranslation();
 
     return <BrowserRouter>
         <Header />
+        <Navbar />
         <Routes>
             <Route exact path={ROUTES.INDEX} element={<Index />} />
             <Route exact path={ROUTES.EVREN} element={<Evren />} />

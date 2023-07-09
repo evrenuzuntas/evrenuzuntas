@@ -22,9 +22,15 @@ const IMAGES = {
     COMMENT_PAGE_IMG: 'renault_comment_page_image.jpg',
     ERROR_PAGE_IMG: 'error_renault.jpg',
 }
+const COOKIES = {
+    AUTHORIZATION: 'authorization',
+    LANGUAGE: 'language',
+    DEVICE: 'device-id',
+};
 
 export {
     IMAGES,
     DEFAULT_LANGUAGE,
     ROUTES,
+    COOKIES
 }

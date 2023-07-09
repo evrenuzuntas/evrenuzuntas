@@ -18,9 +18,7 @@ const Index = (props) => {
     return (
         <Grid >
             <Typography>asdf</Typography>
-            <Button
-                onClick={() => navigate(`${ROUTES.EVREN}`)}
-            >Evren Page</Button>
+
         </Grid>
     )
 }

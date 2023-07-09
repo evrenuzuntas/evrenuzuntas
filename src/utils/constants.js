@@ -5,6 +5,7 @@ const DEFAULT_LANGUAGE = 'tr';
 const ROUTES = {
     ASLI: 'asli',
     EVREN: 'evren',
+    COMMUNICATION: 'communication',
     INDEX: '/',
     NOT_FOUND: '/404',
     LINK_NOT_FOUND: '/',

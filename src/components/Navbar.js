@@ -48,8 +48,8 @@ const Navbar = (props) => {
             <Grid item>
                 <Button
                     sx={{ ...style.buttons }}
-                    onClick={() => navigate(`${ROUTES.EVREN}`)}
-                >3rd Page</Button>
+                    onClick={() => navigate(`${ROUTES.COMMUNICATION}`)}
+                >{t("communication")}</Button>
             </Grid>
 
             <Grid item>

@@ -53,7 +53,6 @@ function LanguageButton(props) {
 
 
     return <Button
-
         onClick={changeLanguageHandler}
         sx={{ ...styles.buttonStyle }}
         variant="contained"

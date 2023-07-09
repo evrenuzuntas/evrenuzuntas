@@ -45,14 +45,17 @@ const Header = (props) => {
                 justifyContent="flex-end"
                 alignItems="center" xs={6}>
 
+                {/* instagram */}
                 <Button onClick={() => window.open(`https://www.instagram.com/evrnznts.js`)}  >
                     <InstagramIcon sx={{ color: '#ffffff', fontSize: "30px" }} />
                 </Button>
 
-                <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
+                {/* twitter */}
+                <Button onClick={() => window.open(`https://twitter.com/evoloper`)}>
                     <FiTwitter color='#ffffff' fontSize="30px" sx={{}} />
                 </Button>
 
+                {/* github */}
                 <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
                     <AiFillGithub color='#ffffff' fontSize="30px" sx={{}} />
                 </Button>

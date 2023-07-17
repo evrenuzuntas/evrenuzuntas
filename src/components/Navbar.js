@@ -16,11 +16,19 @@ const Navbar = (props) => {
 
     const style = {
         root: {
-            backgroundColor: "#383E42",
-            height: "50px",
+            // backgroundColor: "#383E42",
+            backgroundColor: "#FFBF00",
+            minHeight: "50px",
         },
         buttons: {
-            color: "#FFFFFF",
+            color: "#000000",
+            fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
+            "&:hover": {
+                backgroundColor: "transparent",
+                textDecoration: "underline",
+                fontSize: "15px",
+                // letterSpacing: "20px",
+            },
         },
 
     }

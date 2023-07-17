@@ -11,19 +11,21 @@ import { AiFillGithub } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
 import LanguageButton from './LanguageButton';
 
-const Header = (props) => {
+const Footer = (props) => {
     const { t } = useTranslation()
     const navigate = useNavigate();
 
     const style = {
         root: {
             backgroundColor: "#000000",
-            minHeight: "6vw",
-            padding: "1rem"
+            minHeight: "4vw",
+            padding: "1rem",
+            // position: "absolute",
+            // bottom: "0",
         },
         leftButton: {
-            fontSize: "20px",
-            letterSpacing: "0px",
+            fontSize: "22px",
+            letterSpacing: "5px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: "#ffffff"
         },
@@ -34,41 +36,32 @@ const Header = (props) => {
             direction="row"
             justifyContent="space-around"
             alignItems="center" sx={{ ...style.root }}>
-            {/* Left */}
-            <Grid item container xs={6}>
-                <Button disableRipple sx={{ ...style.leftButton }} onClick={() => navigate(`${ROUTES.INDEX}`)}>evoloper</Button>
-            </Grid>
+
 
             {/* Right */}
             <Grid item container
                 direction="row"
-                justifyContent="flex-end"
-                alignItems="center" xs={6}>
+                justifyContent="center"
+                alignItems="center">
 
                 {/* instagram */}
-                {/* <Button onClick={() => window.open(`https://www.instagram.com/evrnznts.js`)}  >
+                <Button onClick={() => window.open(`https://www.instagram.com/evrnznts.js`)}  >
                     <InstagramIcon sx={{ color: '#ffffff', fontSize: "30px" }} />
-                </Button> */}
+                </Button>
 
                 {/* twitter */}
-                {/* <Button onClick={() => window.open(`https://twitter.com/evoloper`)}>
+                <Button onClick={() => window.open(`https://twitter.com/evoloper`)}>
                     <FiTwitter color='#ffffff' fontSize="30px" sx={{}} />
-                </Button> */}
+                </Button>
 
                 {/* github */}
-                {/* <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
+                <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
                     <AiFillGithub color='#ffffff' fontSize="30px" sx={{}} />
-                </Button> */}
+                </Button>
 
-                {/* Language Button */}
-                <Grid item >
-                    <LanguageButton>
-                        {t('languageButton')}
-                    </LanguageButton>
-                </Grid>
             </Grid>
         </Grid>
     )
 }
 
-export default Header;
+export default Footer;

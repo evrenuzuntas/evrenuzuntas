@@ -9,11 +9,13 @@ import Asli from "../pages/Asli";
 import Navbar from "../components/Navbar";
 import Communication from "../pages/Communication";
 import NotFound from "../pages/NotFound";
+import Footer from "../components/Footer";
 
 const AppRouter = () => {
     const { t } = useTranslation();
 
     return <BrowserRouter>
+
         <Header />
         <Navbar />
 
@@ -26,6 +28,9 @@ const AppRouter = () => {
 
             <Route path="*" element={<Navigate to="404" replace />} />
         </Routes>
+
+        <Footer />
+
     </BrowserRouter >
 }
 export default AppRouter

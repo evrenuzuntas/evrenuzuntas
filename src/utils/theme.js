@@ -13,10 +13,9 @@ const DEFAULT_THEME = {
         primary_hover: "#EFDF00",
     },
     typography: {
-        fontFamilyRegular: "NouvelR-Regular !important",
-        fontFamilyBold: "NouvelR-Bold !important",
-        fontFamilyExtraBold: "NouvelR-Extrabold !important",
-        fontFamilyBook: "NouvelR-Book !important",
+        fontFamily: "DaciaBlock-Regular",
+        fontFamilyBold: "DaciaBlock-Bold",
+        fontFamilyBook: "DaciaBlock-Regular",
     },
 };
 

@@ -6,6 +6,7 @@ import cookie from 'react-cookies';
 
 import React, { useEffect } from 'react'
 import { COOKIES } from '../utils/constants';
+import { DEFAULT_THEME } from '../utils/theme';
 
 
 
@@ -19,6 +20,7 @@ function LanguageButton(props) {
             width: '64px',
             height: '32px',
             backgroundColor: "transparent",
+            fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: "#FFFFFF",
             fontSize: "1.3rem",
             "&:hover": {

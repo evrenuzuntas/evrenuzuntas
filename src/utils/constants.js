@@ -1,6 +1,6 @@
 
 
-const DEFAULT_LANGUAGE = 'tr';
+const DEFAULT_LANGUAGE = 'en';
 
 const ROUTES = {
     ASLI: 'asli',

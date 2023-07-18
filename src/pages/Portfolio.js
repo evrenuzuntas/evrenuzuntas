@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { IMAGES, ROUTES } from '../utils/constants';
-import { Button, Grid, Link, Typography } from '@mui/material';
+import { Box, Button, Grid, Link, Typography } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 import { DEFAULT_THEME } from '../utils/theme';
 import MainCard from '../components/MainCard';
@@ -21,6 +21,31 @@ const Portfolio = (props) => {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
             padding: "4rem"
+        },
+        button: {
+            backgroundColor: "#FFFFFF",
+            "&:hover": {
+                backgroundColor: "transparent",
+                textDecoration: "underline",
+            },
+        },
+        buttonTypography: {
+            color: DEFAULT_THEME.palette.black,
+            fontSize: "20px",
+
+        },
+        typographyTitle: {
+            pb: "0.7rem",
+            fontSize: "20px",
+            letterSpacing: "4px",
+            fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
+        },
+        typographyText: {
+            pb: "0.5rem",
+            // fontSize: "40px",
+            fontFamily: DEFAULT_THEME.typography.fontFamily,
+            color: DEFAULT_THEME.palette.black
+
         },
 
     }
@@ -56,25 +81,60 @@ const Portfolio = (props) => {
                         justifyContent="center"
                         alignItems="center" xs={4}>
                         <MainCard>
-                            <Grid item container
-                                direction="column"
-                                justifyContent="center"
-                                alignItems="center" xs={12} >
-                                <img alt={'Preview'} src={img} height="200px" />
-                            </Grid>
-                            <Grid item container
-                                direction="column"
-                                justifyContent="center"
-                                alignItems="center" xs={12}>
-                                <Button onClick={() => window.open(link, '_blank').focus()}>
-                                    {name}
-                                </Button>
-                            </Grid>
+                            <Button sx={{ ...style.button }} onClick={() => window.open(link, '_blank').focus()}>
+                                <Grid item container
+                                    direction="column"
+                                    justifyContent="center"
+                                    alignItems="center" >
+                                    <img alt={'Preview'} src={img} height="200px" />
+                                    <Box m={2} />
+                                    <Typography sx={{ ...style.buttonTypography }}>
+                                        {name}
+                                    </Typography>
+                                </Grid>
+                            </Button>
                         </MainCard>
                     </Grid>
                 })
             }
+            <Box m={5} />
 
+            <MainCard>
+                <Typography sx={{ ...style.typographyTitle }}>references</Typography>
+                <Grid container>
+                    <Grid item xs={6}>
+                        <MainCard>
+                            <Grid container
+                                direction="column"
+                                justifyContent="center"
+                                alignItems="center">
+                                <Typography sx={{ ...style.typographyTitle }}>HALIL AKGUN</Typography>
+                                <Typography sx={{ ...style.typographyText }}>Full Stack Software Developer at Matterway</Typography>
+                                <Typography sx={{ ...style.typographyText }}>halilakgun17@gmail.com</Typography>
+                                <Button sx={{ ...style.button }} onClick={() => window.open(`https://www.linkedin.com/in/halilakgun17/`)}>
+                                    <Typography sx={{ ...style.typographyText }}>linkedin</Typography>
+                                </Button>
+                            </Grid>
+                        </MainCard>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <MainCard>
+                            <Grid container
+                                direction="column"
+                                justifyContent="center"
+                                alignItems="center">
+                                <Typography sx={{ ...style.typographyTitle }}>HALIL IBRAHIM HICYILMAZ</Typography>
+                                <Typography sx={{ ...style.typographyText }}>Full Stack Software Developer at Ambeent</Typography>
+                                <Typography sx={{ ...style.typographyText }}>halilhicyilmaz_@hotmail.com</Typography>
+                                <Button sx={{ ...style.button }} onClick={() => window.open(`https://www.linkedin.com/in/halilhicyilmaz/`)}>
+                                    <Typography sx={{ ...style.typographyText }}>linkedin</Typography>
+                                </Button>
+                            </Grid>
+                        </MainCard>
+                    </Grid>
+
+                </Grid>
+            </MainCard>
 
 
         </Grid>

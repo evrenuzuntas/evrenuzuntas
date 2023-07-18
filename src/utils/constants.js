@@ -20,6 +20,9 @@ const IMAGES = {
     AMBEENT_LOGO: 'images/ambeent_logo.jpg',
     MAIS_LOGO: 'images/mais_logo.png',
 
+    // PagePreviews
+    DACIA_SPRING_PW: 'images/preview/dacia_spring_pw.png',
+
 }
 const COOKIES = {
     AUTHORIZATION: 'authorization',

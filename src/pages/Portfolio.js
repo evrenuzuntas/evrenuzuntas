@@ -29,18 +29,18 @@ const Portfolio = (props) => {
 
     const links = [
 
-        { name: "dacia-spring-survey", link: `egitimmemnuniyetanketi.dacia.com.tr` },
-        { name: "library-official", link: `http://kurumsal.mais.com.tr/buyolculuksenin` },
-        { name: "library-brochure", link: `https://qrbrosur.mais.com.tr/` },
-        { name: "port-web", link: `https://port.renault.com.tr/login` },
-        { name: "leasing-web", link: `https://www.maisfilo.com/` },
-        { name: "renault2-frontend", link: `https://www.renewturkiye.com/` },
-        { name: "digital-week", link: `https://digitalweekonline.mais.com.tr/` },
-        { name: "library-web", link: `http://renaultkutuphane.mais.com.tr/` },
-        { name: "intern-web", link: `https://regeneration.mais.com.tr/` },
-        { name: "emergency-case-survey", link: `https://renaultdinliyor.renault.com.tr/` },
-        { name: "renault-radiocode-web", link: `http://radyokod.renault.com.tr/` },
-        { name: "MS Power", link: `https://www.mspower.com.tr/` },
+        { name: "dacia-spring-survey", link: `egitimmemnuniyetanketi.dacia.com.tr`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "library-official", link: `http://kurumsal.mais.com.tr/buyolculuksenin`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "library-brochure", link: `https://qrbrosur.mais.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "port-web", link: `https://port.renault.com.tr/login`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "leasing-web", link: `https://www.maisfilo.com/`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "renault2-frontend", link: `https://www.renewturkiye.com/`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "digital-week", link: `https://digitalweekonline.mais.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "library-web", link: `http://renaultkutuphane.mais.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "intern-web", link: `https://regeneration.mais.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "emergency-case-survey", link: `https://renaultdinliyor.renault.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "renault-radiocode-web", link: `http://radyokod.renault.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "MS Power", link: `https://www.mspower.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
     ]
 
     return (
@@ -50,13 +50,26 @@ const Portfolio = (props) => {
                 links.map((item, i) => {
                     let name = item.name
                     let link = item.link
-                    return <Grid item xs={4}>
+                    let img = item.img
+                    return <Grid container
+                        direction="column"
+                        justifyContent="center"
+                        alignItems="center" xs={4}>
                         <MainCard>
-                            <Button
-                                onClick={() => window.open(link, '_blank').focus()}
-                            >
-                                {name}
-                            </Button>
+                            <Grid item container
+                                direction="column"
+                                justifyContent="center"
+                                alignItems="center" xs={12} >
+                                <img alt={'Preview'} src={img} height="200px" />
+                            </Grid>
+                            <Grid item container
+                                direction="column"
+                                justifyContent="center"
+                                alignItems="center" xs={12}>
+                                <Button onClick={() => window.open(link, '_blank').focus()}>
+                                    {name}
+                                </Button>
+                            </Grid>
                         </MainCard>
                     </Grid>
                 })

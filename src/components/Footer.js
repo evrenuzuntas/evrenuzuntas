@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { AiFillGithub } from "react-icons/ai";
 import { FiTwitter } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
 import LanguageButton from './LanguageButton';
 
 const Footer = (props) => {
@@ -27,7 +28,7 @@ const Footer = (props) => {
             fontSize: "22px",
             letterSpacing: "5px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            color: "#ffffff"
+            color: DEFAULT_THEME.palette.white
         },
     }
 
@@ -57,6 +58,11 @@ const Footer = (props) => {
                 {/* github */}
                 <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
                     <AiFillGithub color='#ffffff' fontSize="30px" sx={{}} />
+                </Button>
+
+                {/* email */}
+                <Button onClick={() => window.open(`mailto:evrenuzuntas@gmail.com`)}>
+                    <HiOutlineMail color='#ffffff' fontSize="30px" sx={{}} />
                 </Button>
 
             </Grid>

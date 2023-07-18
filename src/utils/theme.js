@@ -4,13 +4,9 @@ const DEFAULT_THEME = {
     palette: {
         white: "#FFFFFF",
         black: "#000000",
-        darkGray: "#3E3F40",
-        gray: "#8C8C8B",
-        lightGray: "#D9D9D6",
-        super_primary: "#EFDF00",
-        super_primary_hover: "#F8EB4C",
-        primary: "#000",
-        primary_hover: "#EFDF00",
+        yellow: "#FFBF00",
+        orange: "#FFA505",
+
     },
     typography: {
         fontFamily: "DaciaBlock-Regular",

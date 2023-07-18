@@ -17,11 +17,11 @@ const Navbar = (props) => {
     const style = {
         root: {
             // backgroundColor: "#383E42",
-            backgroundColor: "#FFBF00",
+            backgroundColor: DEFAULT_THEME.palette.orange,
             minHeight: "50px",
         },
         buttons: {
-            color: "#000000",
+            color: DEFAULT_THEME.palette.black,
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             "&:hover": {
                 backgroundColor: "transparent",
@@ -47,11 +47,12 @@ const Navbar = (props) => {
                 >Evren Page</Button>
             </Grid>
 
+
             <Grid item>
                 <Button
                     sx={{ ...style.buttons }}
-                    onClick={() => navigate(`${ROUTES.EVREN}`)}
-                >2ns Page</Button>
+                    onClick={() => navigate(`${ROUTES.PORTFOLİO}`)}
+                >{t("Portfolio")}</Button>
             </Grid>
             <Grid item>
                 <Button

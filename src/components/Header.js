@@ -25,7 +25,7 @@ const Header = (props) => {
             fontSize: "20px",
             letterSpacing: "0px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            color: "#ffffff"
+            color: DEFAULT_THEME.palette.white
         },
     }
 

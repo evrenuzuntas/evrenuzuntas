@@ -21,7 +21,7 @@ function LanguageButton(props) {
             height: '32px',
             backgroundColor: "transparent",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            color: "#FFFFFF",
+            color: DEFAULT_THEME.palette.white,
             fontSize: "1.3rem",
             "&:hover": {
                 backgroundColor: "transparent",

@@ -6,22 +6,20 @@ const ROUTES = {
     ASLI: 'asli',
     EVREN: 'evren',
     COMMUNICATION: 'communication',
+    PORTFOLİO: 'portfolio',
     INDEX: '/',
     NOT_FOUND: '/404',
     LINK_NOT_FOUND: '/',
 }
 
 const IMAGES = {
-    LOGO_MAIN: 'renault_logo_white.png',
-    AUSTRAL_LOGO_MAIN: 'austral_logo_white.png',
-    AUSTRAL_BACKGROUND: 'background_image.jpg',
-    PHOTIER_LOGO: 'Plogo.png',
-    FAVICON_AUSTRAL: 'favicon.ico',
-    TITLE: 'RENAULT KÜTÜPHANE',
-    VEHICLE_PAGE_IMG: 'renault_vehicle_page_image.jpg',
-    SERVICE_PAGE_IMG: 'renault_service_page_image.jpg',
-    COMMENT_PAGE_IMG: 'renault_comment_page_image.jpg',
-    ERROR_PAGE_IMG: 'error_renault.jpg',
+    VESIKALIK: 'images/vesikalik.jpg',
+    KKU_LOGO: 'images/kku_logo.jpeg',
+    YATAGAN_LOGO: 'images/yatagan_logo.png',
+    YURDAKUL_LOGO: 'images/yurdakul_logo.png',
+    AMBEENT_LOGO: 'images/ambeent_logo.jpg',
+    MAIS_LOGO: 'images/mais_logo.png',
+
 }
 const COOKIES = {
     AUTHORIZATION: 'authorization',

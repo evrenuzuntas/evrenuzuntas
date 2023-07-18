@@ -26,21 +26,21 @@ const Index = (props) => {
             fontSize: "60px",
             letterSpacing: "40px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            color: "#000000"
+            color: DEFAULT_THEME.palette.black
 
         },
         typography: {
             fontSize: "200px",
             letterSpacing: "20px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            color: "#000000"
+            color: DEFAULT_THEME.palette.black
 
         },
         typography2: {
             fontSize: "40px",
             letterSpacing: "40px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
-            color: "#000000"
+            color: DEFAULT_THEME.palette.black
 
         },
         part1: {
@@ -52,7 +52,7 @@ const Index = (props) => {
         lorem: {
             // fontSize: "40px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
-            color: "#000000"
+            color: DEFAULT_THEME.palette.black
 
         },
 
@@ -78,7 +78,7 @@ const Index = (props) => {
 
                 <Grid item xs={12}>
                     <MainCard>
-                        <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography>
+                        <Typography sx={{ ...style.lorem }}>{t("aboutMe")}</Typography>
                     </MainCard>
                 </Grid>
 

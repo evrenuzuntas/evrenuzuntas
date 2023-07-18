@@ -18,7 +18,7 @@ const Navbar = (props) => {
         root: {
             // backgroundColor: "#383E42",
             backgroundColor: DEFAULT_THEME.palette.orange,
-            minHeight: "50px",
+            maxHeight: "50px",
         },
         buttons: {
             color: DEFAULT_THEME.palette.black,
@@ -26,7 +26,7 @@ const Navbar = (props) => {
             "&:hover": {
                 backgroundColor: "transparent",
                 textDecoration: "underline",
-                fontSize: "15px",
+                // fontSize: "15px",
                 // letterSpacing: "20px",
             },
         },

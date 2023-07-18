@@ -115,28 +115,37 @@ const Evren = (props) => {
 
 
             <MainCard>
-                <Grid item sx={{ ...style.image }} xs={12} sm={2}>
-                    <img alt={'yurdakullogo'} src={IMAGES.AMBEENT_LOGO} width="100%" />
-                    <img alt={'yurdakullogo'} src={IMAGES.MAIS_LOGO} width="100%" />
+
+                <Grid item sx={{ ...style.image }} xs={12} sm={2} >
+                    <Button onClick={() => window.open(`https://www.ambeent.ai/`)}>
+                        <img alt={'yurdakullogo'} src={IMAGES.AMBEENT_LOGO} width="100%" />
+                    </Button>
+                    <Button onClick={() => window.open(`https://www.renault.com.tr/`)}>
+                        <img alt={'yurdakullogo'} src={IMAGES.MAIS_LOGO} width="100%" />
+                    </Button>
                 </Grid>
                 <Grid item xs={12} sm={8} >
-                    <Typography sx={{ ...style.typographyTitle }}>{t("AMBEENT INC. (FRONT END DEVELOPER)")}</Typography>
-                    <Typography sx={{ ...style.typographyText }}>{t("Developing front end website and applications for Renault Mais. ")}</Typography>
-                    <Typography sx={{ ...style.typographyText }}>{t("Technologies used: React JS, TypeScript, JavaScript, HTML & CSS, Redux, Mui, Jira, Git, Figma, Bitbucket, Postman, Azure")}</Typography>
+                    <Typography sx={{ ...style.typographyTitle }}>{t("ambeent0")}</Typography>
+                    <Typography sx={{ ...style.typographyText }}>{t("ambeent1")}</Typography>
+                    <Typography sx={{ ...style.typographyText }}>{t("ambeent2")}</Typography>
                 </Grid>
                 <Grid item xs={12} sm={2}>
                     <Typography sx={{ ...style.typographyDate }}>{t("Apr 2021 -")}</Typography>
-                    <Typography sx={{ ...style.typographyDate, color: "green" }}>{t("Ongoing")}</Typography>
+                    <Typography sx={{ ...style.typographyDate, color: "green" }}>{t("ongoing")}</Typography>
                 </Grid>
             </MainCard>
 
             <MainCard>
-                <Grid item sx={{ ...style.image }} xs={12} sm={2}><img alt={'yurdakullogo'} src={IMAGES.YURDAKUL_LOGO} width="100%" /></Grid>
+                <Grid item sx={{ ...style.image }} xs={12} sm={2}>
+                    <Button onClick={() => window.open(`http://www.yurdakul.com/`)}>
+                        <img alt={'yurdakullogo'} src={IMAGES.YURDAKUL_LOGO} width="100%" />
+                    </Button>
+                </Grid>
                 <Grid item xs={12} sm={8} >
-                    <Typography sx={{ ...style.typographyTitle }}>{t("YURDAKUL ELECTRIC")}</Typography>
-                    <Typography sx={{ ...style.typographyTitle }}>{t("ELECTRICAL ELECTRONICS ENGINEERING (INTERN)")}</Typography>
-                    <Typography sx={{ ...style.typographyText }}>{t("Made electrical project drawings of shopping mall and city hospitals.")}</Typography>
-                    <Typography sx={{ ...style.typographyText }}>{t("Technologies used: AutoCad")}</Typography>
+                    <Typography sx={{ ...style.typographyTitle }}>{t("yurdakul0")}</Typography>
+                    <Typography sx={{ ...style.typographyTitle }}>{t("yurdakul1")}</Typography>
+                    <Typography sx={{ ...style.typographyText }}>{t("yurdakul2")}</Typography>
+                    <Typography sx={{ ...style.typographyText }}>{t("yurdakul3")}</Typography>
                 </Grid>
                 <Grid item xs={12} sm={2}>
                     <Typography sx={{ ...style.typographyDate }}>{t("Jul 2018 - Aug 2018")}</Typography>
@@ -144,11 +153,15 @@ const Evren = (props) => {
             </MainCard>
 
             <MainCard>
-                <Grid item sx={{ ...style.image }} xs={12} sm={2}><img alt={'yataganlogo'} src={IMAGES.YATAGAN_LOGO} width="100%" /></Grid>
+                <Grid item sx={{ ...style.image }} xs={12} sm={2}>
+                    <Button onClick={() => window.open(`https://www.yatagantermik.com.tr/`)}>
+                        <img alt={'yataganlogo'} src={IMAGES.YATAGAN_LOGO} width="100%" />
+                    </Button>
+                </Grid>
                 <Grid item xs={12} sm={8} >
-                    <Typography sx={{ ...style.typographyTitle }}>{t("YATAGAN THERMAL POWER PLANT")}</Typography>
-                    <Typography sx={{ ...style.typographyTitle }}>{t("ELECTRICAL ELECTRONICS ENGINEERING (INTERN)")}</Typography>
-                    <Typography sx={{ ...style.typographyText }}>{t("As an engineer in charge of the electrical production facility")}</Typography>
+                    <Typography sx={{ ...style.typographyTitle }}>{t("yatagan0")}</Typography>
+                    <Typography sx={{ ...style.typographyTitle }}>{t("yatagan1")}</Typography>
+                    <Typography sx={{ ...style.typographyText }}>{t("yatagan2")}</Typography>
                 </Grid>
                 <Grid item xs={12} sm={2}>
                     <Typography sx={{ ...style.typographyDate }}>{t("Jul 2017 - Aug 2017")}</Typography>
@@ -158,10 +171,14 @@ const Evren = (props) => {
 
 
             <MainCard>
-                <Grid item sx={{ ...style.image }} xs={12} sm={2}><img alt={'kirikkaleunivercity'} src={IMAGES.KKU_LOGO} width="100%" /></Grid>
+                <Grid item sx={{ ...style.image }} xs={12} sm={2}>
+                    <Button onClick={() => window.open(`http://mf.kku.edu.tr/Fakulte`)}>
+                        <img alt={'kirikkaleunivercity'} src={IMAGES.KKU_LOGO} width="100%" />
+                    </Button>
+                </Grid>
                 <Grid item xs={12} sm={8} >
-                    <Typography sx={{ ...style.typographyTitle }}>{t("KIRIKKALE UNIVERSITY")}</Typography>
-                    <Typography sx={{ ...style.typographyTitle }}>{t("ElectrIcal ElectronIcs EngIneerIng ")}</Typography>
+                    <Typography sx={{ ...style.typographyTitle }}>{t("kku0")}</Typography>
+                    <Typography sx={{ ...style.typographyTitle }}>{t("kku1")}</Typography>
                     <Typography sx={{ ...style.typographyText }}>{t("GPA 2.80")}</Typography>
                 </Grid>
                 <Grid item xs={12} sm={2}>

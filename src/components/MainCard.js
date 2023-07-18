@@ -28,8 +28,8 @@ const MainCard = (props) => {
         paper: {
             width: "stretch",
             // minHeight: '730px',
-            boxShadow: '0px 0px 2px 4px #FFBF00',
-            borderRadius: '20px',
+            boxShadow: '0px 0px 1px 2px #FFBF00',
+            borderRadius: '10px',
             border: '1px solid #FFBF00',
             // backgroundColor: '#F5F5F5',
             margin: isTablet ? "0.3rem" : "1rem"

@@ -26,7 +26,7 @@ const Portfolio = (props) => {
         button: {
             backgroundColor: "#FFFFFF",
             "&:hover": {
-                backgroundColor: "transparent",
+                backgroundColor: DEFAULT_THEME.palette.yellow,
                 textDecoration: "underline",
             },
         },

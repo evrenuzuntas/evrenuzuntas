@@ -26,10 +26,10 @@ const Index = (props) => {
         },
         typography0: {
             textAlign: "center",
-            fontSize: isTablet ? "26px" : "60px",
+            fontSize: isTablet ? "26px" : "80px",
             letterSpacing: isTablet ? "14px" : "40px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            color: DEFAULT_THEME.palette.black
+            color: DEFAULT_THEME.palette.orange,
 
         },
 
@@ -63,9 +63,9 @@ const Index = (props) => {
                 justifyContent="flex-end"
                 alignItems="center"
                 sx={{ ...style.part1 }}>
-                <Typography sx={{ ...style.typography0 }}>{t("evrenUzuntas")}</Typography>
+                <Typography sx={{ ...style.typography0 }}>{t("WELCOME")}</Typography>
                 {/* <Typography sx={{ ...style.typography }}>evoloper</Typography> */}
-                <Typography sx={{ ...style.typography2 }}>{t("softwareDeveloper")}</Typography>
+                {/* <Typography sx={{ ...style.typography2 }}>{t("softwareDeveloper")}</Typography> */}
             </Grid>
 
             <Grid item container

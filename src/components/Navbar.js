@@ -61,13 +61,6 @@ const Navbar = (props) => {
                 >{t("communication")}</Button>
             </Grid>
 
-            <Grid item>
-                <Button
-                    sx={{ ...style.buttons }}
-                    onClick={() => navigate(`${ROUTES.ASLI}`)}
-                >ASLI</Button>
-            </Grid>
-
         </Grid>
     )
 }

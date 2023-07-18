@@ -13,11 +13,16 @@ const Communication = (props) => {
     favicon.href = IMAGES.FAVICON_AUSTRAL
     document.title = ' Communication PAGE '
 
-
+    const style = {
+        root: {
+            backgroundColor: "#FFFFFF",
+        },
+    }
 
     return (
-        <Grid >
-            <Typography>Communication</Typography>
+        <Grid container sx={{ ...style.root }}>
+            <img alt={'Preview'} src={IMAGES.COMING_SOON} width="100%" />
+
         </Grid>
     )
 }

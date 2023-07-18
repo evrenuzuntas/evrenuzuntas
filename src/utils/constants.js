@@ -19,6 +19,8 @@ const IMAGES = {
     YURDAKUL_LOGO: 'images/yurdakul_logo.png',
     AMBEENT_LOGO: 'images/ambeent_logo.jpg',
     MAIS_LOGO: 'images/mais_logo.png',
+    NOT_FOUND: 'images/404_page.webp',
+    COMING_SOON: 'images/coming-soon.jpg',
 
     // PagePreviews
     DACIA_SPRING_PW: 'images/preview/dacia_spring_pw.png',

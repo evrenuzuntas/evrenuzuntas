@@ -13,11 +13,15 @@ const NotFound = (props) => {
     favicon.href = IMAGES.FAVICON_AUSTRAL
     document.title = ' NotFound PAGE '
 
-
+    const style = {
+        root: {
+            backgroundColor: "#FFFFFF",
+        },
+    }
 
     return (
-        <Grid >
-            <Typography>404 NotFound PAGE</Typography>
+        <Grid container sx={{ ...style.root }}>
+            <img alt={'Preview'} src={IMAGES.NOT_FOUND} width="100%" />
         </Grid>
     )
 }

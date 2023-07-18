@@ -60,6 +60,7 @@ const Footer = (props) => {
                     <AiFillGithub color='#ffffff' fontSize="30px" sx={{}} />
                 </Button>
 
+
                 {/* email */}
                 <Button onClick={() => window.open(`mailto:evrenuzuntas@gmail.com`)}>
                     <HiOutlineMail color='#ffffff' fontSize="30px" sx={{}} />

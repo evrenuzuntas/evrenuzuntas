@@ -13,7 +13,7 @@ const ROUTES = {
 }
 
 const IMAGES = {
-    VESIKALIK: 'images/vesikalik.jpg',
+    VESIKALIK: 'images/vesikalik.jpeg',
     KKU_LOGO: 'images/kku_logo.jpeg',
     YATAGAN_LOGO: 'images/yatagan_logo.png',
     YURDAKUL_LOGO: 'images/yurdakul_logo.png',
@@ -23,7 +23,7 @@ const IMAGES = {
     COMING_SOON: 'images/coming-soon.jpg',
 
     // PagePreviews
-    DACIA_SPRING_PW: 'images/preview/dacia_spring_pw.png',
+    DACIA_SPRING_PW: 'images/preview/dacia_spring_pw.jpeg',
 
 }
 const COOKIES = {

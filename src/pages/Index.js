@@ -1,13 +1,15 @@
 import { React, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { IMAGES, ROUTES } from '../utils/constants';
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Grid, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from "react-router-dom";
-import { DEFAULT_THEME } from '../utils/theme';
+import { DEFAULT_THEME, getTheme } from '../utils/theme';
 import MainCard from '../components/MainCard';
 
 
 const Index = (props) => {
+    const isTablet = useMediaQuery(getTheme().breakpoints.down('tablet'));
+
     const { t } = useTranslation()
     const favicon = document.getElementById("favicon")
     const title = document.getElementById("title")
@@ -20,31 +22,27 @@ const Index = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: "8rem 4rem"
+            padding: isTablet ? "1rem" : "8rem 4rem"
         },
         typography0: {
-            fontSize: "60px",
-            letterSpacing: "40px",
+            textAlign: "center",
+            fontSize: isTablet ? "26px" : "60px",
+            letterSpacing: isTablet ? "14px" : "40px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: DEFAULT_THEME.palette.black
 
         },
-        typography: {
-            fontSize: "200px",
-            letterSpacing: "20px",
-            fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            color: DEFAULT_THEME.palette.black
 
-        },
         typography2: {
-            fontSize: "40px",
-            letterSpacing: "40px",
+            textAlign: "center",
+            fontSize: isTablet ? "24px" : "40px",
+            letterSpacing: isTablet ? "6px" : "40px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
             color: DEFAULT_THEME.palette.black
 
         },
         part1: {
-            mb: "12rem"
+            mb: isTablet ? "2rem" : "12rem"
         },
         part2: {
             mb: "4rem"
@@ -62,7 +60,7 @@ const Index = (props) => {
 
             <Grid item container
                 direction="column"
-                justifyContent="flex-start"
+                justifyContent="flex-end"
                 alignItems="center"
                 sx={{ ...style.part1 }}>
                 <Typography sx={{ ...style.typography0 }}>{t("evrenUzuntas")}</Typography>
@@ -90,17 +88,17 @@ const Index = (props) => {
                 alignItems="center"
                 sx={{ ...style.part3 }}>
 
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={4}>
                     <MainCard>
                         <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography>
                     </MainCard>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={4}>
                     <MainCard>
                         <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography>
                     </MainCard>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={4}>
                     <MainCard>
                         <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography>
                     </MainCard>

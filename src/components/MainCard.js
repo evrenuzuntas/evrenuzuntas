@@ -45,7 +45,7 @@ const MainCard = (props) => {
     return (
         <Paper sx={{ ...styles.paper }}>
             <Grid container sx={{ ...styles.root }}>
-                <Grid container sx={{ padding: isTablet ? '20px' : '50px', }}>
+                <Grid container sx={{ padding: isTablet ? '15px' : '30px', }}>
                     {props.children}
                 </Grid>
             </Grid>

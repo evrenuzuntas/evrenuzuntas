@@ -1,13 +1,14 @@
 import { React, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { IMAGES, ROUTES } from '../utils/constants';
-import { Box, Button, Grid, Link, Typography } from '@mui/material';
+import { Box, Button, Grid, Link, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from "react-router-dom";
-import { DEFAULT_THEME } from '../utils/theme';
+import { DEFAULT_THEME, getTheme } from '../utils/theme';
 import MainCard from '../components/MainCard';
 
 
 const Portfolio = (props) => {
+    const isTablet = useMediaQuery(getTheme().breakpoints.down('tablet'));
     const { t } = useTranslation()
     const favicon = document.getElementById("favicon")
     const title = document.getElementById("title")
@@ -20,7 +21,7 @@ const Portfolio = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: "4rem"
+            padding: isTablet ? "1rem" : "4rem"
         },
         button: {
             backgroundColor: "#FFFFFF",
@@ -30,17 +31,20 @@ const Portfolio = (props) => {
             },
         },
         buttonTypography: {
+            textAlign: "center",
             color: DEFAULT_THEME.palette.black,
             fontSize: "20px",
 
         },
         typographyTitle: {
+            textAlign: "center",
             pb: "0.7rem",
             fontSize: "20px",
             letterSpacing: "4px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
         },
         typographyText: {
+            textAlign: "center",
             pb: "0.5rem",
             // fontSize: "40px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
@@ -79,14 +83,14 @@ const Portfolio = (props) => {
                     return <Grid container
                         direction="column"
                         justifyContent="center"
-                        alignItems="center" xs={4}>
+                        alignItems="center" xs={12} md={6} xl={4}>
                         <MainCard>
                             <Button sx={{ ...style.button }} onClick={() => window.open(link, '_blank').focus()}>
                                 <Grid item container
                                     direction="column"
                                     justifyContent="center"
                                     alignItems="center" >
-                                    <img alt={'Preview'} src={img} height="200px" />
+                                    <img alt={'Preview'} src={img} width="100%" />
                                     <Box m={2} />
                                     <Typography sx={{ ...style.buttonTypography }}>
                                         {name}
@@ -102,7 +106,7 @@ const Portfolio = (props) => {
             <MainCard>
                 <Typography sx={{ ...style.typographyTitle }}>references</Typography>
                 <Grid container>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <MainCard>
                             <Grid container
                                 direction="column"
@@ -117,7 +121,7 @@ const Portfolio = (props) => {
                             </Grid>
                         </MainCard>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <MainCard>
                             <Grid container
                                 direction="column"

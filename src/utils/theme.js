@@ -26,10 +26,10 @@ function getTheme() {
                 sm: 740,
                 // medium
                 md: 900,
-                // large
-                lg: 1377,
                 // extra-large
                 xl: 1300,
+                // large
+                lg: 1377,
                 // for-devices
                 mobile: 0,
                 tablet: 640,

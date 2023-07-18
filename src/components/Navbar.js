@@ -44,7 +44,7 @@ const Navbar = (props) => {
                 <Button
                     sx={{ ...style.buttons }}
                     onClick={() => navigate(`${ROUTES.EVREN}`)}
-                >Evren Page</Button>
+                >{t("evrenpage")}</Button>
             </Grid>
 
 
@@ -52,7 +52,7 @@ const Navbar = (props) => {
                 <Button
                     sx={{ ...style.buttons }}
                     onClick={() => navigate(`${ROUTES.PORTFOLİO}`)}
-                >{t("Portfolio")}</Button>
+                >{t("portfolio")}</Button>
             </Grid>
             <Grid item>
                 <Button

@@ -12,6 +12,8 @@ export default {
             languageButton: "TR",
             language: "Tr",
             communication: "İLETİŞİM",
+            portfolio: "PORTFÖY",
+            evrenpage: "EVREN SAYFASI",
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAŞ",
@@ -37,6 +39,14 @@ export default {
 
             kku0: "KIRIKKALE ÜNİVERSİTESİ",
             kku1: "Elektrik Elektronik Mühendisliği",
+
+            // Portfolio
+            references: "Referanslar",
+            referenceWebsites: "Referans Websiteleri",
+            ha0: "Matterway'de Full Stack Yazılım Geliştirici",
+            ha1: "HALİL AKGÜN",
+            hh0: "Ambeent'da Full Stack Yazılım Geliştirici",
+            hh1: "HALİL İBRAHİM HİÇYILMAZ",
         }
     },
 
@@ -50,6 +60,8 @@ export default {
             language: "EN",
             languageButton: "EN",
             communication: "communication",
+            portfolio: "PORTFOLIO",
+            evrenpage: "EVREN PAGE",
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAS",
@@ -75,6 +87,14 @@ export default {
 
             kku0: "KIRIKKALE UNIVERSITY",
             kku1: "ElectrIcal ElectronIcs EngIneerIng",
+
+            // Portfolio
+            references: "References",
+            referenceWebsites: "Reference Websites",
+            ha0: "Full Stack Software Developer at Matterway",
+            ha1: "HALIL AKGUN",
+            hh0: "Full Stack Software Developer at Ambeent",
+            hh1: "HALIL IBRAHIM HICYILMAZ",
 
         }
     }

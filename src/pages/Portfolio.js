@@ -14,7 +14,7 @@ const Portfolio = (props) => {
     const title = document.getElementById("title")
 
     favicon.href = IMAGES.FAVICON_AUSTRAL
-    document.title = ' EVREN U '
+    document.title = ' PORTFOLIO '
     const navigate = useNavigate();
 
     const style = {
@@ -74,7 +74,7 @@ const Portfolio = (props) => {
 
     return (
         <Grid container sx={{ ...style.root }}>
-            <Typography sx={{ ...style.typographyTitle }}>reference websites</Typography>
+            <Typography sx={{ ...style.typographyTitle }}>{t("referenceWebsites")}</Typography>
             <Grid container>
 
                 {
@@ -107,7 +107,7 @@ const Portfolio = (props) => {
             <Box m={5} />
 
             <MainCard>
-                <Typography sx={{ ...style.typographyTitle }}>references</Typography>
+                <Typography sx={{ ...style.typographyTitle }}>{t("references")}</Typography>
                 <Grid container>
                     <Grid item xs={12} md={6}>
                         <MainCard>
@@ -115,8 +115,8 @@ const Portfolio = (props) => {
                                 direction="column"
                                 justifyContent="center"
                                 alignItems="center">
-                                <Typography sx={{ ...style.typographyTitle }}>HALIL AKGUN</Typography>
-                                <Typography sx={{ ...style.typographyText }}>Full Stack Software Developer at Matterway</Typography>
+                                <Typography sx={{ ...style.typographyTitle }}>{t("ha1")}</Typography>
+                                <Typography sx={{ ...style.typographyText }}>{t("ha0")}</Typography>
                                 <Typography sx={{ ...style.typographyText }}>halilakgun17@gmail.com</Typography>
                                 <Button sx={{ ...style.button }} onClick={() => window.open(`https://www.linkedin.com/in/halilakgun17/`)}>
                                     <Typography sx={{ ...style.typographyText }}>linkedin</Typography>
@@ -130,8 +130,8 @@ const Portfolio = (props) => {
                                 direction="column"
                                 justifyContent="center"
                                 alignItems="center">
-                                <Typography sx={{ ...style.typographyTitle }}>HALIL IBRAHIM HICYILMAZ</Typography>
-                                <Typography sx={{ ...style.typographyText }}>Full Stack Software Developer at Ambeent</Typography>
+                                <Typography sx={{ ...style.typographyTitle }}>{t("hh1")}</Typography>
+                                <Typography sx={{ ...style.typographyText }}>{t("hh0")}</Typography>
                                 <Typography sx={{ ...style.typographyText }}>halilhicyilmaz_@hotmail.com</Typography>
                                 <Button sx={{ ...style.button }} onClick={() => window.open(`https://www.linkedin.com/in/halilhicyilmaz/`)}>
                                     <Typography sx={{ ...style.typographyText }}>linkedin</Typography>

@@ -4,6 +4,7 @@ const DEFAULT_THEME = {
     palette: {
         white: "#FFFFFF",
         black: "#000000",
+        darkgray: "#232323",
         yellow: "#FFBF00",
         orange: "#FFA505",
 

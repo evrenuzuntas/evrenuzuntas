@@ -17,7 +17,7 @@ const Header = (props) => {
 
     const style = {
         root: {
-            backgroundColor: "#000000",
+            backgroundColor: DEFAULT_THEME.palette.darkgray,
             minHeight: "6vw",
             padding: "1rem"
         },

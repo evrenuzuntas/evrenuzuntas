@@ -18,7 +18,7 @@ const Footer = (props) => {
 
     const style = {
         root: {
-            backgroundColor: "#000000",
+            backgroundColor: DEFAULT_THEME.palette.darkgray,
             minHeight: "4vw",
             padding: "1rem",
             // position: "absolute",

@@ -5,7 +5,8 @@ const DEFAULT_LANGUAGE = 'en';
 const ROUTES = {
     ASLI: 'asli',
     EVREN: 'evren',
-    COMMUNICATION: 'communication',
+    CONNECT: 'connect',
+    BLOG: 'blog',
     PORTFOLİO: 'portfolio',
     INDEX: '/',
     NOT_FOUND: '/404',

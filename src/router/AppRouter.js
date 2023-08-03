@@ -7,10 +7,11 @@ import Evren from "../pages/Evren";
 import Header from "../components/Header";
 import Asli from "../pages/Asli";
 import Navbar from "../components/Navbar";
-import Communication from "../pages/Communication";
+import Connect from "../pages/Connect";
 import NotFound from "../pages/NotFound";
 import Footer from "../components/Footer";
 import Portfolio from "../pages/Portfolio";
+import Blog from "../pages/Blog";
 
 const AppRouter = () => {
     const { t } = useTranslation();
@@ -24,7 +25,8 @@ const AppRouter = () => {
             <Route exact path={ROUTES.INDEX} element={<Index />} />
             <Route exact path={ROUTES.EVREN} element={<Evren />} />
             <Route exact path={ROUTES.ASLI} element={<Asli />} />
-            <Route exact path={ROUTES.COMMUNICATION} element={<Communication />} />
+            <Route exact path={ROUTES.CONNECT} element={<Connect />} />
+            <Route exact path={ROUTES.BLOG} element={<Blog />} />
             <Route exact path={ROUTES.PORTFOLİO} element={<Portfolio />} />
             <Route exact path={ROUTES.NOT_FOUND} element={<NotFound />} />
 

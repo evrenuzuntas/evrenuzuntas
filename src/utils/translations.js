@@ -11,7 +11,7 @@ export default {
             //    Header     
             languageButton: "TR",
             language: "Tr",
-            communication: "İLETİŞİM",
+            connect: "İLETİŞİM",
             portfolio: "PORTFÖY",
             evrenpage: "EVREN SAYFASI",
 
@@ -59,7 +59,7 @@ export default {
             //    Header     
             language: "EN",
             languageButton: "EN",
-            communication: "communication",
+            connect: "connect",
             portfolio: "PORTFOLIO",
             evrenpage: "EVREN PAGE",
 

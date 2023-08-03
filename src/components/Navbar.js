@@ -32,7 +32,7 @@ const Navbar = (props) => {
         },
 
     }
-
+    // TODO hangi sayfada isem nevbarda onun altına bir işaret ya da underline koy
     return (
         <Grid container
             direction="row"
@@ -58,7 +58,13 @@ const Navbar = (props) => {
                 <Button
                     sx={{ ...style.buttons }}
                     onClick={() => navigate(`${ROUTES.COMMUNICATION}`)}
-                >{t("communication")}</Button>
+                >{t("connect")}</Button>
+            </Grid>
+            <Grid item>
+                <Button
+                    sx={{ ...style.buttons }}
+                    onClick={() => navigate(`${ROUTES.BLOG}`)}
+                >{t("blog")}</Button>
             </Grid>
 
         </Grid>

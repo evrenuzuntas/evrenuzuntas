@@ -32,15 +32,27 @@ function LanguageButton(props) {
         }
     }
 
+    let language = "en"
     const changeLanguageHandler = () => {
-        language = i18n.language === "en" ? "tr" : "en"
+        i18n.language === "en" ? language = "de" : i18n.language === "tr" ? language = "en" : language = "tr"
+        // if (i18n.language === "en") {
+        //     language = "de"
+        //     return
+        // }
+        // else if (i18n.language === "de") {
+        //     language = "tr"
+        //     return
+        // }
+        // else if (i18n.language === "tr") {
+        //     language = "en"
+        //     return
+        // }
 
         // change the i18n language
         i18n.changeLanguage(language)
         cookie.save(COOKIES.LANGUAGE, language, { path: '/' })
 
     }
-    let language = 'tr';
     useEffect(() => {
         // get language from the cookie
         const lang = cookie.load(COOKIES.LANGUAGE)

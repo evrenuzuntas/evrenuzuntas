@@ -1,6 +1,8 @@
 //disable yellow errors for this page
 /* eslint-disable import/no-anonymous-default-export */
 
+import { green } from "@mui/material/colors";
+
 export default {
 
     tr: {
@@ -97,5 +99,54 @@ export default {
             hh1: "HALIL IBRAHIM HICYILMAZ",
 
         }
-    }
+    },
+
+    de: {
+        translation: {
+            notFound1: "404",
+            notFound2: "Seite nicht gefunden.",
+
+            //    Header
+            language: "DE",
+            languageButton: "DE",
+            connect: "verbinden",
+            portfolio: "PORTFOLIO",
+            evrenpage: "EVREN PAGE",
+
+            // Index Page
+            evrenUzuntas: "EVREN UZUNTAS",
+            softwareDeveloper: "SOFTWAREENTWICKLER",
+            aboutMe: "Ich beschreibe mich als ehrgeizige, verantwortungsbewusste und fleißige Person. Ich sehe mein Leben als eine lange Reise und mein größtes Ziel ist es, aus dieser Reise in jeder Hinsicht das Beste herauszuholen. Ich bin sehr daran interessiert und lerne gerne neue Fähigkeiten. Ich bin begeistert von Elektronik und Programmierung. Ich interessiere mich auch für Reisen, Technologie und Sport.",
+
+            loremipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget mollis ipsum. Quisque consequat vestibulum faucibus. Proin laoreet egestas lorem, vitae vestibulum turpis vehicula a. Nulla sed augue maximus, faucibus quam ut, posuere purus. Nulla consequat arcu ut diam aliquam lobortis. Pellentesque eu mi magna. Aenean quis enim ac lorem placerat lobortis. Nulla sed dui vestibulum consequat cursus justo. Duis nulla est, vehicula sit amet est sit amet, cursus congue nunc.",
+
+            // Evren Page
+            ambeent0: "AMBEENT INC. (FRONT END ENTWICKLER)",
+            ambeent1: "Entwicklung von Front-End-Websites und -Anwendungen für Renault Mais und Dacia Mais.",
+            ambeent2: "Verwendete Technologien: React JS, TypeScript, JavaScript, HTML & CSS, Redux, Mui, Jira, Git, Figma, Bitbucket, Postman, Azure",
+            ongoing: "Laufend",
+
+            yurdakul0: "YURDAKUL ENGINEERING",
+            yurdakul1: "ELEKTROELEKTRONIKINGENIEUR (INTERN)",
+            yurdakul2: "Erstellung elektrischer Projektzeichnungen für Einkaufszentren und Stadtkrankenhäuser.",
+            yurdakul3: "Verwendete Technologien: AutoCad",
+
+            yatagan0: "YATAGAN THERMALKRAFTWERK",
+            yatagan1: "ELEKTROELEKTRONIKINGENIEUR (INTERN)",
+            yatagan2: "Als Ingenieur für die elektrische Produktionsanlage",
+
+            kku0: "KIRIKKALE UNIVERSITÄT",
+            kku1: "ElektrIcal ElectronIcs EngIneerIng",
+
+            // Portfolio
+            references: "Referenzen",
+            referenceWebsites: "Referenz-Websites",
+            ha0: "Full Stack Softwareentwickler bei Matterway",
+            ha1: "HALIL AKGUN",
+            hh0: "Full Stack Softwareentwickler bei Ambeent",
+            hh1: "HALIL IBRAHIM HICYILMAZ",
+
+
+        }
+    },
 }

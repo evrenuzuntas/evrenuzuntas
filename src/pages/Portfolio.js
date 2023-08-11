@@ -21,7 +21,15 @@ const Portfolio = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "1rem" : "4rem"
+            padding: isTablet ? "2rem" : "8rem 4rem"
+        },
+        typography0: {
+            textAlign: "center",
+            fontSize: isTablet ? "30px" : "50px",
+            letterSpacing: isTablet ? "14px" : "20px",
+            fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
+            color: DEFAULT_THEME.palette.orange,
+            pb: isTablet ? "2rem" : "10rem",
         },
         button: {
             backgroundColor: "#FFFFFF",
@@ -74,38 +82,21 @@ const Portfolio = (props) => {
 
     return (
         <Grid container sx={{ ...style.root }}>
-            <Typography sx={{ ...style.typographyTitle }}>{t("referenceWebsites")}</Typography>
-            <Grid container>
+            <Grid xs={12}><Typography sx={{ ...style.typography0 }}>{t("referenceWebsites")}</Typography></Grid>
+            {links.map((item, i) => {
+                return <Grid container xs={12} md={6} xl={4}>
+                    <MainCard>
+                        <Button sx={{ ...style.button }} onClick={() => window.open(item.link, '_blank').focus()}>
+                            <Grid item container direction="column" justifyContent="center" alignItems="center" >
+                                <img alt={'Preview'} src={item.img} width="100%" />
+                                <Typography sx={{ ...style.buttonTypography }}>{item.name}</Typography>
+                            </Grid>
+                        </Button>
+                    </MainCard>
+                </Grid>
+            })}
 
-                {
-                    links.map((item, i) => {
-                        let name = item.name
-                        let link = item.link
-                        let img = item.img
-                        return <Grid container
-                            direction="column"
-                            justifyContent="center"
-                            alignItems="center" xs={12} md={6} xl={4}>
-                            <MainCard>
-                                <Button sx={{ ...style.button }} onClick={() => window.open(link, '_blank').focus()}>
-                                    <Grid item container
-                                        direction="column"
-                                        justifyContent="center"
-                                        alignItems="center" >
-                                        <img alt={'Preview'} src={img} width="100%" />
-                                        <Box m={2} />
-                                        <Typography sx={{ ...style.buttonTypography }}>
-                                            {name}
-                                        </Typography>
-                                    </Grid>
-                                </Button>
-                            </MainCard>
-                        </Grid>
-                    })
-                }
-            </Grid >
-            <Box m={5} />
-
+            {/* references */}
             <MainCard>
                 <Typography sx={{ ...style.typographyTitle }}>{t("references")}</Typography>
                 <Grid container>
@@ -142,8 +133,6 @@ const Portfolio = (props) => {
 
                 </Grid>
             </MainCard>
-
-
         </Grid>
     )
 }

@@ -18,7 +18,7 @@ const Navbar = (props) => {
         root: {
             // backgroundColor: "#383E42",
             backgroundColor: DEFAULT_THEME.palette.orange,
-            maxHeight: "50px",
+            minHeight: "50px",
         },
         buttons: {
             color: DEFAULT_THEME.palette.black,
@@ -57,7 +57,7 @@ const Navbar = (props) => {
             <Grid item>
                 <Button
                     sx={{ ...style.buttons }}
-                    onClick={() => navigate(`${ROUTES.COMMUNICATION}`)}
+                    onClick={() => navigate(`${ROUTES.CONNECT}`)}
                 >{t("connect")}</Button>
             </Grid>
             <Grid item>

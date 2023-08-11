@@ -8,6 +8,7 @@ import React, { useEffect } from 'react'
 import { COOKIES } from '../utils/constants';
 import { DEFAULT_THEME } from '../utils/theme';
 
+let index = 0
 
 
 function LanguageButton(props) {
@@ -32,9 +33,11 @@ function LanguageButton(props) {
         }
     }
 
-    let language = "en"
+    const languages = ["en", "de", "tr", "fr"]
+    // let language = "en"
     const changeLanguageHandler = () => {
-        i18n.language === "en" ? language = "de" : i18n.language === "tr" ? language = "en" : language = "tr"
+
+        // i18n.language === "en" ? language = "de" : i18n.language === "tr" ? language = "en" : language = "tr"
         // if (i18n.language === "en") {
         //     language = "de"
         //     return
@@ -49,8 +52,10 @@ function LanguageButton(props) {
         // }
 
         // change the i18n language
-        i18n.changeLanguage(language)
-        cookie.save(COOKIES.LANGUAGE, language, { path: '/' })
+        index++
+        cookie.save(COOKIES.LANGUAGE, languages[index % languages.length], { path: '/' })
+        i18n.changeLanguage(languages[index % languages.length])
+        console.log([index % languages.length]);
 
     }
     useEffect(() => {
@@ -60,9 +65,8 @@ function LanguageButton(props) {
         if (lang === undefined) {
             cookie.save(COOKIES.LANGUAGE, i18n.language, { path: '/' })
         } else {
-            language = lang
+            i18n.changeLanguage(lang)
         }
-        i18n.changeLanguage(language)
     }, [])
 
 

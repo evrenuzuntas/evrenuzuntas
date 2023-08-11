@@ -57,52 +57,18 @@ const Index = (props) => {
     }
     return (
         <Grid container sx={{ ...style.root }}>
-
-            <Grid item container
-                direction="column"
-                justifyContent="flex-end"
-                alignItems="center"
-                sx={{ ...style.part1 }}>
-                <Typography sx={{ ...style.typography0 }}>{t("WELCOME")}</Typography>
-                {/* <Typography sx={{ ...style.typography }}>evoloper</Typography> */}
-                {/* <Typography sx={{ ...style.typography2 }}>{t("softwareDeveloper")}</Typography> */}
+            <Grid xs={12}>
+                <Typography sx={{ ...style.typography0 }}>{t("welcome")}</Typography>
             </Grid>
-
-            <Grid item container
-                direction="row"
-                justifyContent="center"
-                alignItems="center"
-                sx={{ ...style.part2 }}>
-
-                <Grid item xs={12}>
-                    <MainCard>
-                        <Typography sx={{ ...style.lorem }}>{t("aboutMe")}</Typography>
-                    </MainCard>
-                </Grid>
-
+            <MainCard> <Typography sx={{ ...style.lorem }}>{t("aboutMe")}</Typography>  </MainCard>
+            <Grid item xs={12} sm={4}>
+                <MainCard> <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
             </Grid>
-
-            <Grid item container
-                direction="row"
-                justifyContent="center"
-                alignItems="center"
-                sx={{ ...style.part3 }}>
-
-                <Grid item xs={12} sm={4}>
-                    <MainCard>
-                        <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography>
-                    </MainCard>
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <MainCard>
-                        <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography>
-                    </MainCard>
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <MainCard>
-                        <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography>
-                    </MainCard>
-                </Grid>
+            <Grid item xs={12} sm={4}>
+                <MainCard> <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+                <MainCard><Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
             </Grid>
         </Grid>
     )

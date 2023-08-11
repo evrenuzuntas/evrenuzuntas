@@ -22,54 +22,62 @@ const Connect = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "1rem" : "8rem 4rem"
+            padding: isTablet ? "2rem" : "8rem 4rem"
         },
         typography0: {
             textAlign: "center",
-            fontSize: isTablet ? "26px" : "80px",
-            letterSpacing: isTablet ? "14px" : "40px",
+            fontSize: isTablet ? "30px" : "50px",
+            letterSpacing: isTablet ? "14px" : "20px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: DEFAULT_THEME.palette.orange,
-
+            pb: isTablet ? "2rem" : "10rem",
         },
 
-        typography2: {
-            textAlign: "center",
-            fontSize: isTablet ? "24px" : "40px",
-            letterSpacing: isTablet ? "6px" : "40px",
+        button: {
+            backgroundColor: "#FFFFFF",
+            "&:hover": {
+                backgroundColor: DEFAULT_THEME.palette.yellow,
+                textDecoration: "underline",
+            },
+        },
+
+        titleTypography: {
+            fontSize: "24px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
-            color: DEFAULT_THEME.palette.black
-
+            color: DEFAULT_THEME.palette.black,
+            pb: "1rem"
         },
-        part1: {
-            mb: isTablet ? "2rem" : "12rem"
-        },
-        part2: {
-            mb: "4rem"
-        },
-        lorem: {
-            // fontSize: "40px",
-            fontFamily: DEFAULT_THEME.typography.fontFamily,
-            color: DEFAULT_THEME.palette.black
-
-        },
-
     }
+
+
+    const accounts = [
+
+        { title: "Youtube", text: `@evoloperr`, link: "https://www.youtube.com/channel/UC4Qqz2xYQ7qQDQ9nQfJyOlg", icon: IMAGES.KKU_LOGO },
+        { title: "Instagram", text: `@evoloperr`, link: "https://www.youtube.com/channel/UC4Qqz2xYQ7qQDQ9nQfJyOlg", icon: IMAGES.KKU_LOGO },
+        { title: "X", text: `@evoloperr`, link: "https://www.youtube.com/channel/UC4Qqz2xYQ7qQDQ9nQfJyOlg", icon: IMAGES.KKU_LOGO },
+        { title: "Whatsapp", text: `@evoloperr`, link: "https://www.youtube.com/channel/UC4Qqz2xYQ7qQDQ9nQfJyOlg", icon: IMAGES.KKU_LOGO },
+
+    ]
     return (
         <Grid container sx={{ ...style.root }}>
-
-            <Grid item container
-                direction="column"
-                justifyContent="flex-end"
-                alignItems="center"
-                sx={{ ...style.part1 }}>
-                <Typography sx={{ ...style.typography0 }}>{t("WELCOME")}</Typography>
-                {/* <Typography sx={{ ...style.typography }}>evoloper</Typography> */}
-                {/* <Typography sx={{ ...style.typography2 }}>{t("softwareDeveloper")}</Typography> */}
-            </Grid>
-
-
-
+            <Grid xs={12}><Typography sx={{ ...style.typography0 }}>{t("connect")}</Typography></Grid>
+            {accounts.map((item, i) => {
+                return <Grid xs={12} xl={6}>
+                    <MainCard>
+                        <Button sx={{ ...style.button }} onClick={() => window.open(item.link, '_blank').focus()}>
+                            <Grid container direction="row" justifyContent="space-around" alignItems="center"  >
+                                <Grid >
+                                    <img src={item.icon} alt="icon" style={{ width: "100px", height: "100px" }} />
+                                </Grid>
+                                <Grid >
+                                    <Typography sx={{ ...style.titleTypography }}>{item.title}</Typography>
+                                    <Typography >{item.text}</Typography>
+                                </Grid>
+                            </Grid>
+                        </Button>
+                    </MainCard>
+                </Grid>
+            })}
         </Grid>
     )
 }

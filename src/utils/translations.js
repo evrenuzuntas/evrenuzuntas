@@ -21,7 +21,7 @@ export default {
             evrenUzuntas: "EVREN UZUNTAŞ",
             softwareDeveloper: "YAZILIM GELİŞTİRİCİ",
             aboutMe: "Kendimi hırslı, sorumluluk sahibi ve çalışkan biri olarak tanımlarım. Hayatımı uzun bir yolculuk olarak görüyorum ve bu yolculuktan her yönüyle en iyi şekilde yararlanmak en büyük hedefim. Yeni beceriler öğrenmeye çok meraklı ve hevesliyim. Elektronik ve programlama ile ilgileniyorum. Seyahat, teknoloji ve sporla da ilgileniyorum. ",
-
+            welcome: "HOŞGELDİNİZ",
             loremipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget mollis ipsum. Quisque consequat vestibulum faucibus. Proin laoreet egestas lorem, vitae vestibulum turpis vehicula a. Nulla sed augue maximus, faucibus quam ut, posuere purus. Nulla consequat arcu ut diam aliquam lobortis. Pellentesque eu mi magna. Aenean quis enim ac lorem placerat lobortis. Nulla sed dui vestibulum consequat cursus justo. Duis nulla est, vehicula sit amet est sit amet, cursus congue nunc.",
 
             // Evren Page
@@ -49,6 +49,10 @@ export default {
             ha1: "HALİL AKGÜN",
             hh0: "Ambeent'da Full Stack Yazılım Geliştirici",
             hh1: "HALİL İBRAHİM HİÇYILMAZ",
+
+            //Blog
+            blog: "BLOG",
+
         }
     },
 
@@ -69,6 +73,7 @@ export default {
             evrenUzuntas: "EVREN UZUNTAS",
             softwareDeveloper: "SOFTWARE DEVELOPER",
             aboutMe: "I describe myself as an ambitious, responsible and hard- working individual. I see my life as a long journey and my greatest goal is to get the most out of this journey in every aspect. I am very into and eager to learn new skills. I am passionate about electronics and programming. I am also interested in traveling, technology and sports. ",
+            welcome: "WELCOME",
 
             loremipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget mollis ipsum. Quisque consequat vestibulum faucibus. Proin laoreet egestas lorem, vitae vestibulum turpis vehicula a. Nulla sed augue maximus, faucibus quam ut, posuere purus. Nulla consequat arcu ut diam aliquam lobortis. Pellentesque eu mi magna. Aenean quis enim ac lorem placerat lobortis. Nulla sed dui vestibulum consequat cursus justo. Duis nulla est, vehicula sit amet est sit amet, cursus congue nunc.",
 
@@ -98,6 +103,8 @@ export default {
             hh0: "Full Stack Software Developer at Ambeent",
             hh1: "HALIL IBRAHIM HICYILMAZ",
 
+            //Blog
+            blog: "BLOG",
         }
     },
 
@@ -117,7 +124,7 @@ export default {
             evrenUzuntas: "EVREN UZUNTAS",
             softwareDeveloper: "SOFTWAREENTWICKLER",
             aboutMe: "Ich beschreibe mich als ehrgeizige, verantwortungsbewusste und fleißige Person. Ich sehe mein Leben als eine lange Reise und mein größtes Ziel ist es, aus dieser Reise in jeder Hinsicht das Beste herauszuholen. Ich bin sehr daran interessiert und lerne gerne neue Fähigkeiten. Ich bin begeistert von Elektronik und Programmierung. Ich interessiere mich auch für Reisen, Technologie und Sport.",
-
+            welcome: "WILLKOMMEN",
             loremipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget mollis ipsum. Quisque consequat vestibulum faucibus. Proin laoreet egestas lorem, vitae vestibulum turpis vehicula a. Nulla sed augue maximus, faucibus quam ut, posuere purus. Nulla consequat arcu ut diam aliquam lobortis. Pellentesque eu mi magna. Aenean quis enim ac lorem placerat lobortis. Nulla sed dui vestibulum consequat cursus justo. Duis nulla est, vehicula sit amet est sit amet, cursus congue nunc.",
 
             // Evren Page
@@ -146,7 +153,57 @@ export default {
             hh0: "Full Stack Softwareentwickler bei Ambeent",
             hh1: "HALIL IBRAHIM HICYILMAZ",
 
+            //Blog
+            blog: "BLOG",
 
         }
     },
+    fr: {
+        translation: {
+            notFound1: "404",
+            notFound2: "Page non trouvée.",
+            //    Header
+            language: "FR",
+            languageButton: "FR",
+            connect: "connecter",
+            portfolio: "PORTFOLIO",
+            evrenpage: "EVREN PAGE",
+
+            // Index Page
+            evrenUzuntas: "EVREN UZUNTAS",
+            softwareDeveloper: "DÉVELOPPEUR LOGICIEL",
+            aboutMe: "Je me décris comme une personne ambitieuse, responsable et travailleuse. Je vois ma vie comme un long voyage et mon plus grand objectif est d'en tirer le meilleur parti à tous égards. Je suis très intéressé et désireux d'apprendre de nouvelles compétences. Je suis passionné d'électronique et de programmation. Je m'intéresse également aux voyages, à la technologie et aux sports.",
+            welcome: "BIENVENUE",
+            loremipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget mollis ipsum. Quisque consequat vestibulum faucibus. Proin laoreet egestas lorem, vitae vestibulum turpis vehicula a. Nulla sed augue maximus, faucibus quam ut, posuere purus. Nulla consequat arcu ut diam aliquam lobortis. Pellentesque eu mi magna. Aenean quis enim ac lorem placerat lobortis. Nulla sed dui vestibulum consequat cursus justo. Duis nulla est, vehicula sit amet est sit amet, cursus congue nunc.",
+            // Evren Page
+            ambeent0: "AMBEENT INC. (DÉVELOPPEUR FRONT END)",
+            ambeent1: "Développement de sites Web et d'applications frontales pour Renault Mais et Dacia Mais.",
+            ambeent2: "Technologies utilisées: React JS, TypeScript, JavaScript, HTML & CSS, Redux, Mui, Jira, Git, Figma, Bitbucket, Postman, Azure",
+            ongoing: "En cours",
+
+            yurdakul0: "YURDAKUL ENGINEERING",
+            yurdakul1: "INGÉNIEUR EN ÉLECTRONIQUE ÉLECTRIQUE (INTERN)",
+            yurdakul2: "Réalisation de dessins de projets électriques pour les centres commerciaux et les hôpitaux de la ville.",
+            yurdakul3: "Technologies utilisées: AutoCad",
+
+            yatagan0: "CENTRALE THERMIQUE DE YATAGAN",
+            yatagan1: "INGÉNIEUR EN ÉLECTRONIQUE ÉLECTRIQUE (INTERN)",
+            yatagan2: "En tant qu'ingénieur en charge de l'installation de production électrique",
+
+            kku0: "UNIVERSITÉ DE KIRIKKALE",
+            kku1: "Ingénierie électrique électronique",
+
+            // Portfolio
+            references: "Références",
+            referenceWebsites: "Sites Web de référence",
+            ha0: "Développeur logiciel Full Stack chez Matterway",
+            ha1: "HALIL AKGUN",
+            hh0: "Développeur logiciel Full Stack chez Ambeent",
+            hh1: "HALIL IBRAHIM HICYILMAZ",
+
+            //Blog
+            blog: "BLOG",
+
+        }
+    }
 }

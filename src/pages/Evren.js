@@ -5,6 +5,7 @@ import { Button, Grid, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 import { DEFAULT_THEME, getTheme } from '../utils/theme';
 import MainCard from '../components/MainCard';
+import { CenterFocusStrong } from '@mui/icons-material';
 
 
 const Evren = (props) => {
@@ -116,7 +117,7 @@ const Evren = (props) => {
 
             <MainCard>
 
-                <Grid item sx={{ ...style.image }} xs={12} sm={2} >
+                <Grid item sx={{ ...style.image }} xs={12} sm={2} textAlign={"center"} >
                     <Button onClick={() => window.open(`https://www.ambeent.ai/`)}>
                         <img alt={'yurdakullogo'} src={IMAGES.AMBEENT_LOGO} width="100%" />
                     </Button>
@@ -136,8 +137,8 @@ const Evren = (props) => {
             </MainCard>
 
             <MainCard>
-                <Grid item sx={{ ...style.image }} xs={12} sm={2}>
-                    <Button onClick={() => window.open(`http://www.yurdakul.com/`)}>
+                <Grid item sx={{ ...style.image }} xs={12} sm={2} textAlign={"center"} >
+                    <Button onClick={() => window.open(`http://www.yurdakul.com/`)} >
                         <img alt={'yurdakullogo'} src={IMAGES.YURDAKUL_LOGO} width="100%" />
                     </Button>
                 </Grid>
@@ -153,7 +154,7 @@ const Evren = (props) => {
             </MainCard>
 
             <MainCard>
-                <Grid item sx={{ ...style.image }} xs={12} sm={2}>
+                <Grid item sx={{ ...style.image }} xs={12} sm={2} textAlign={"center"}>
                     <Button onClick={() => window.open(`https://www.yatagantermik.com.tr/`)}>
                         <img alt={'yataganlogo'} src={IMAGES.YATAGAN_LOGO} width="100%" />
                     </Button>
@@ -171,7 +172,7 @@ const Evren = (props) => {
 
 
             <MainCard>
-                <Grid item sx={{ ...style.image }} xs={12} sm={2}>
+                <Grid item sx={{ ...style.image }} xs={12} sm={2} textAlign={"center"}>
                     <Button onClick={() => window.open(`http://mf.kku.edu.tr/Fakulte`)}>
                         <img alt={'kirikkaleunivercity'} src={IMAGES.KKU_LOGO} width="100%" />
                     </Button>

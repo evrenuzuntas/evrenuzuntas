@@ -2,6 +2,7 @@ import { React, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { IMAGES } from '../utils/constants';
 import { Grid, Typography } from '@mui/material';
+import Title from '../components/Title';
 
 
 
@@ -17,7 +18,7 @@ const Asli = (props) => {
 
     return (
         <Grid >
-            <Typography>SENİ ÇOK SEVİYORUM AŞKIMM</Typography>
+            <Title title={t("SENİ ÇOK SEVİYORUM AŞKIMM")} />
         </Grid>
     )
 }

@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { DEFAULT_THEME, getTheme } from '../utils/theme';
 import MainCard from '../components/MainCard';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Title from '../components/Title';
 
 
 const Blog = (props) => {
@@ -30,58 +31,49 @@ const Blog = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "2rem" : "8rem 4rem"
+            padding: isTablet ? "2rem" : "4rem 3rem"
         },
-        typography0: {
-            textAlign: "center",
-            fontSize: isTablet ? "30px" : "50px",
-            letterSpacing: isTablet ? "14px" : "20px",
-            fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            color: DEFAULT_THEME.palette.orange,
-            pb: isTablet ? "2rem" : "10rem",
-        },
-        titleTypography: {
-            fontSize: "24px",
-            fontFamily: DEFAULT_THEME.typography.fontFamily,
-            color: DEFAULT_THEME.palette.black,
-            pb: "1rem"
+
+        accordion: {
+            boxShadow: '0px 0px 1px 2px #FFBF00',
+            borderRadius: '10px',
+            border: '1px solid #FFBF00',
+            // backgroundColor: '#F5F5F5',
+            margin: isTablet ? "0.3rem" : "1rem"
         },
     }
     const blogs = [
 
-        { title: "Kuryeye qr kod", text: `Multinet ile kapıda ödeme yaparken telefon çekmiyo, Onları hemen wifi nin misafir moduna bağlıyorum multinet çekiyo sonra modem atıyo onları` },
-        { title: "2222222222222", text: `Mtest sajıhfadhkfjkdkjlfskdjfslunsfasfsdfdem atdaıyo odasdasddasasdasdasdnları` },
+        { title: "Kuryeye qr", text: `Multinet ile kapıda ödeme yaparken telefon çekmiyo, Onları hemen wifi nin misafir moduna bağlıyorum multinet çekiyo sonra modem atıyo onları || Multinet ile kapıda ödeme yaparken telefon çekmiyo, Onları hemen wifi nin misafir moduna bağlıyorum multinet çekiyo sonra modem atıyo onları ` },
+        { title: "22222222", text: `Mtest sajıhfadhkfjkdkjlfskdjfslunsfasfsdfdem atdaıyo odasdasddasasdasdasdnları` },
     ]
     return (
-        <Grid container sx={{ ...style.root }}>
-            <Grid xs={12}><Typography sx={{ ...style.typography0 }}>{t("blog")}</Typography></Grid>
+        <Grid sx={{ ...style.root }}>
+            <Title title={t("blog")} />
             {blogs.map((item, i) => {
-                return <Grid container xs={12}>
-                    <MainCard>
-                        <Accordion expanded={expanded === i} onChange={handleChange(i)}>
-                            <AccordionSummary
-                                expandIcon={<ExpandMoreIcon />}
-                                aria-controls="panel1bh-content"
-                                id="panel1bh-header"
-                            >
-                                <Typography sx={{ width: '33%', flexShrink: 0 }}>
-                                    {item.title}
-                                </Typography>
-                                <Typography sx={{ color: 'text.secondary' }}>{item.title}</Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography>
-                                    {item.text}
-                                </Typography>
-                            </AccordionDetails>
-                            {/* <MainCard>
-                        <Typography sx={{ ...style.titleTypography }}>{item.title}</Typography>
-                        <Typography>{item.text}</Typography>
-                    </MainCard> */}
-                        </Accordion>
-                    </MainCard>
+                return <Grid width="100%">
+                    <Accordion sx={{ ...style.accordion }} expanded={expanded === i} onChange={handleChange(i)}>
+
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header">
+                            <Typography sx={{ width: '33%', flexShrink: 0 }}>
+                                {item.title}
+                            </Typography>
+                            <Typography sx={{ color: 'text.secondary' }}>{item.title}</Typography>
+                        </AccordionSummary>
+
+                        <AccordionDetails >
+                            <Typography >
+                                {item.text}
+                            </Typography>
+                        </AccordionDetails>
+
+                    </Accordion>
                 </Grid>
             })}
+
         </Grid>
     )
 }

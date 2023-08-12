@@ -5,6 +5,7 @@ import { Button, Grid, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 import { DEFAULT_THEME, getTheme } from '../utils/theme';
 import MainCard from '../components/MainCard';
+import Title from '../components/Title';
 
 
 const Connect = (props) => {
@@ -22,7 +23,7 @@ const Connect = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "2rem" : "8rem 4rem"
+            padding: isTablet ? "2rem" : "4rem 3rem"
         },
         typography0: {
             textAlign: "center",
@@ -60,7 +61,7 @@ const Connect = (props) => {
     ]
     return (
         <Grid container sx={{ ...style.root }}>
-            <Grid xs={12}><Typography sx={{ ...style.typography0 }}>{t("connect")}</Typography></Grid>
+            <Title title={t("connect")} />
             {accounts.map((item, i) => {
                 return <Grid xs={12} xl={6}>
                     <MainCard>

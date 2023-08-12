@@ -5,13 +5,14 @@ import { Box, Button, Grid, Link, Typography, useMediaQuery } from '@mui/materia
 import { useNavigate } from "react-router-dom";
 import { DEFAULT_THEME, getTheme } from '../utils/theme';
 import MainCard from '../components/MainCard';
+import Title from '../components/Title';
 
 
 const Portfolio = (props) => {
-    const isTablet = useMediaQuery(getTheme().breakpoints.down('tablet'));
     const { t } = useTranslation()
     const favicon = document.getElementById("favicon")
     const title = document.getElementById("title")
+    const isTablet = useMediaQuery(getTheme().breakpoints.down('tablet'));
 
     favicon.href = IMAGES.FAVICON_AUSTRAL
     document.title = ' PORTFOLIO '
@@ -21,15 +22,7 @@ const Portfolio = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "2rem" : "8rem 4rem"
-        },
-        typography0: {
-            textAlign: "center",
-            fontSize: isTablet ? "30px" : "50px",
-            letterSpacing: isTablet ? "14px" : "20px",
-            fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            color: DEFAULT_THEME.palette.orange,
-            pb: isTablet ? "2rem" : "10rem",
+            padding: isTablet ? "2rem" : "4rem 3rem"
         },
         button: {
             backgroundColor: "#FFFFFF",
@@ -82,7 +75,7 @@ const Portfolio = (props) => {
 
     return (
         <Grid container sx={{ ...style.root }}>
-            <Grid xs={12}><Typography sx={{ ...style.typography0 }}>{t("referenceWebsites")}</Typography></Grid>
+            <Title title={t("referenceWebsites")} />
             {links.map((item, i) => {
                 return <Grid container xs={12} md={6} xl={4}>
                     <MainCard>

@@ -5,6 +5,7 @@ import { Button, Grid, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 import { DEFAULT_THEME, getTheme } from '../utils/theme';
 import MainCard from '../components/MainCard';
+import Title from '../components/Title';
 
 
 const Index = (props) => {
@@ -22,7 +23,7 @@ const Index = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "1rem" : "8rem 4rem"
+            padding: isTablet ? "2rem" : "4rem 3rem"
         },
         typography0: {
             textAlign: "center",
@@ -58,7 +59,7 @@ const Index = (props) => {
     return (
         <Grid container sx={{ ...style.root }}>
             <Grid xs={12}>
-                <Typography sx={{ ...style.typography0 }}>{t("welcome")}</Typography>
+                <Title title={t("welcome")} />
             </Grid>
             <MainCard> <Typography sx={{ ...style.lorem }}>{t("aboutMe")}</Typography>  </MainCard>
             <Grid item xs={12} sm={4}>

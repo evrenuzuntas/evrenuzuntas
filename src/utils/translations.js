@@ -125,7 +125,7 @@ export default {
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAS",
-            softwareDeveloper: "SOFTWAREENTWICKLER",
+            softwareDeveloper: "SOFTWARE ENTWICKLER",
             aboutMe: "Ich beschreibe mich als ehrgeizige, verantwortungsbewusste und fleißige Person. Ich sehe mein Leben als eine lange Reise und mein größtes Ziel ist es, aus dieser Reise in jeder Hinsicht das Beste herauszuholen. Ich bin sehr daran interessiert und lerne gerne neue Fähigkeiten. Ich bin begeistert von Elektronik und Programmierung. Ich interessiere mich auch für Reisen, Technologie und Sport.",
             welcome: "WILLKOMMEN",
             loremipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget mollis ipsum. Quisque consequat vestibulum faucibus. Proin laoreet egestas lorem, vitae vestibulum turpis vehicula a. Nulla sed augue maximus, faucibus quam ut, posuere purus. Nulla consequat arcu ut diam aliquam lobortis. Pellentesque eu mi magna. Aenean quis enim ac lorem placerat lobortis. Nulla sed dui vestibulum consequat cursus justo. Duis nulla est, vehicula sit amet est sit amet, cursus congue nunc.",

@@ -17,7 +17,7 @@ const Title = (props) => {
 
         typography0: {
             textAlign: "center",
-            fontSize: isSm ? "20px" : isMd ? "30px" : "80px",
+            fontSize: isSm ? "20px" : isMd ? "40px" : "80px",
             letterSpacing: isSm ? "14px" : "20px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: DEFAULT_THEME.palette.orange,
@@ -25,12 +25,10 @@ const Title = (props) => {
         },
     }
     return (
-        <Grid container>
-            <Grid xs={12}>
-                <Typography sx={{ ...style.typography0 }}>
-                    {(title)}
-                </Typography>
-            </Grid>
+        <Grid xs={12}>
+            <Typography sx={{ ...style.typography0 }}>
+                {(title)}
+            </Typography>
         </Grid>
     )
 }

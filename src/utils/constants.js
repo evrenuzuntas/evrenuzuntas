@@ -24,7 +24,11 @@ const IMAGES = {
     MAIS_LOGO: 'images/mais_logo.png',
     NOT_FOUND: 'images/404_page.webp',
     COMING_SOON: 'images/coming-soon.jpg',
-
+    // connect
+    YT_LOGO: 'images/youtube_318-183441.avif',
+    INSTA_LOGO: 'images/insta.png',
+    TW_LOGO: 'images/twitter.png',
+    WP_LOGO: 'images/wp.png',
     // PagePreviews
     DACIA_SPRING_PW: 'images/preview/dacia_spring_pw.jpeg',
 

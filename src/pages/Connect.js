@@ -9,7 +9,7 @@ import Title from '../components/Title';
 
 
 const Connect = (props) => {
-    const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
+    const isMd = useMediaQuery(getTheme().breakpoints.down('md'));
 
     const { t } = useTranslation()
     const favicon = document.getElementById("favicon")
@@ -23,59 +23,74 @@ const Connect = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isSm ? "2rem" : "4rem 3rem"
+            padding: isMd ? "2rem" : "4rem 3rem"
         },
         typography0: {
             textAlign: "center",
-            fontSize: isSm ? "30px" : "50px",
-            letterSpacing: isSm ? "14px" : "20px",
+            fontSize: isMd ? "30px" : "50px",
+            letterSpacing: isMd ? "14px" : "20px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: DEFAULT_THEME.palette.orange,
-            pb: isSm ? "2rem" : "10rem",
+            pb: isMd ? "2rem" : "10rem",
         },
-
         button: {
             backgroundColor: "#FFFFFF",
             "&:hover": {
-                backgroundColor: DEFAULT_THEME.palette.yellow,
                 textDecoration: "underline",
+                backgroundColor: "#FFFFFF",
             },
         },
-
         titleTypography: {
-            fontSize: "24px",
+            fontSize: "16px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
             color: DEFAULT_THEME.palette.black,
             pb: "1rem"
+        },
+        textTypography: {
+            fontSize: "16px",
+            fontFamily: DEFAULT_THEME.typography.fontFamily,
+            color: DEFAULT_THEME.palette.orange,
+            pb: "1rem",
+            "&:hover": {
+                color: DEFAULT_THEME.palette.orange,
+            },
         },
     }
 
 
     const accounts = [
 
-        { title: "Youtube", text: `@evoloperr`, link: "https://www.youtube.com/channel/UC4Qqz2xYQ7qQDQ9nQfJyOlg", icon: IMAGES.KKU_LOGO },
-        { title: "Instagram", text: `@evoloperr`, link: "https://www.youtube.com/channel/UC4Qqz2xYQ7qQDQ9nQfJyOlg", icon: IMAGES.KKU_LOGO },
-        { title: "X", text: `@evoloperr`, link: "https://www.youtube.com/channel/UC4Qqz2xYQ7qQDQ9nQfJyOlg", icon: IMAGES.KKU_LOGO },
-        { title: "Whatsapp", text: `@evoloperr`, link: "https://www.youtube.com/channel/UC4Qqz2xYQ7qQDQ9nQfJyOlg", icon: IMAGES.KKU_LOGO },
+        { title: "Youtube", text: `@evoloperr`, link: "https://www.youtube.com/@evoloperr", icon: IMAGES.YT_LOGO },
+        { title: "Instagram", text: `@evoloperr`, link: "https://www.instagram.com/evoloper/", icon: IMAGES.INSTA_LOGO },
+        { title: "X", text: `@evoloperr`, link: "https://twitter.com/evoloper", icon: IMAGES.TW_LOGO },
+        { title: "Whatsapp", text: `@evoloperr`, link: "https://wa.me/+905532028484", icon: IMAGES.WP_LOGO },
 
     ]
     return (
-        <Grid container sx={{ ...style.root }}>
+        <Grid container direction="row" justifyContent="center" alignItems="center" sx={{ ...style.root }}>
             <Title title={t("connect")} />
             {accounts.map((item, i) => {
-                return <Grid xs={12} xl={6}>
-                    <MainCard>
-                        <Button sx={{ ...style.button }} onClick={() => window.open(item.link, '_blank').focus()}>
-                            <Grid container direction="row" justifyContent="space-around" alignItems="center"  >
-                                <Grid >
-                                    <img src={item.icon} alt="icon" style={{ width: "100px", height: "100px" }} />
+                return <Grid xs={12} sm={6} md={4} >
+                    <MainCard >
+                        <Grid container
+                            direction="row"
+                            justifyContent="center"
+                            alignItems="center">
+                            <Button sx={{ ...style.button }} onClick={() => window.open(item.link, '_blank').focus()}>
+                                <Grid container>
+                                    <Grid xs={12} xl={6}>
+                                        <img src={item.icon} alt="icon" style={{ width: "100px", height: "100px" }} />
+                                    </Grid>
+                                    <Grid xs={12} xl={6} container
+                                        direction="column"
+                                        justifyContent="center"
+                                        alignItems="center">
+                                        <Typography sx={{ ...style.titleTypography }}>{item.title}</Typography>
+                                        <Typography sx={{ ...style.textTypography }}>{item.text}</Typography>
+                                    </Grid>
                                 </Grid>
-                                <Grid >
-                                    <Typography sx={{ ...style.titleTypography }}>{item.title}</Typography>
-                                    <Typography >{item.text}</Typography>
-                                </Grid>
-                            </Grid>
-                        </Button>
+                            </Button>
+                        </Grid>
                     </MainCard>
                 </Grid>
             })}

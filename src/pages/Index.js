@@ -10,6 +10,7 @@ import Title from '../components/Title';
 
 const Index = (props) => {
     const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
+    const isMd = useMediaQuery(getTheme().breakpoints.down('md'));
 
     const { t } = useTranslation()
     const favicon = document.getElementById("favicon")
@@ -23,30 +24,7 @@ const Index = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isSm ? "2rem" : "4rem 3rem"
-        },
-        typography0: {
-            textAlign: "center",
-            fontSize: isSm ? "26px" : "80px",
-            letterSpacing: isSm ? "14px" : "40px",
-            fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            color: DEFAULT_THEME.palette.orange,
-
-        },
-
-        typography2: {
-            textAlign: "center",
-            fontSize: isSm ? "24px" : "40px",
-            letterSpacing: isSm ? "6px" : "40px",
-            fontFamily: DEFAULT_THEME.typography.fontFamily,
-            color: DEFAULT_THEME.palette.black
-
-        },
-        part1: {
-            mb: isSm ? "2rem" : "12rem"
-        },
-        part2: {
-            mb: "4rem"
+            padding: isSm ? "1rem" : isMd ? "2rem" : "3rem"
         },
         lorem: {
             // fontSize: "40px",

@@ -19,6 +19,7 @@ import { getTheme } from "../utils/theme";
 const MainCard = (props) => {
 
     const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
+    const isMd = useMediaQuery(getTheme().breakpoints.down('md'));
 
     const { style } = props
     const params = useLocation()
@@ -45,7 +46,7 @@ const MainCard = (props) => {
     return (
         <Paper sx={{ ...styles.paper }}>
             <Grid container sx={{ ...styles.root }}>
-                <Grid container sx={{ padding: isSm ? '15px' : '30px', }}>
+                <Grid container sx={{ padding: isSm ? '10px' : isMd ? '15px' : '30px', }}>
                     {props.children}
                 </Grid>
             </Grid>

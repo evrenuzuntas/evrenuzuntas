@@ -12,6 +12,8 @@ const ROUTES = {
     NOT_FOUND: '/404',
     LINK_NOT_FOUND: '/',
 }
+const NAVBAR_ROUTES = ["evren", "connect", "blog", "portfolio",]
+
 
 const IMAGES = {
     VESIKALIK: 'images/vesikalik.jpeg',
@@ -37,5 +39,6 @@ export {
     IMAGES,
     DEFAULT_LANGUAGE,
     ROUTES,
-    COOKIES
+    COOKIES,
+    NAVBAR_ROUTES,
 }

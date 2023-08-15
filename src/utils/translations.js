@@ -11,11 +11,12 @@ export default {
             notFound1: "404",
             notFound2: "Aradığınız sayfaya ulaşılamadı.",
             //    Header     
+            continues: "Websitemiz İçin Çalışmalar Devam Ediyor",
             languageButton: "TR",
             language: "Tr",
             connect: "İLETİŞİM",
             portfolio: "PORTFÖY",
-            evrenpage: "EVREN SAYFASI",
+            evren: "EVREN SAYFASI",
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAŞ",
@@ -62,12 +63,13 @@ export default {
             notFound1: "404",
             notFound2: "Page Not Found.",
 
-            //    Header     
+            //    Header   
+            continues: "We are working on our website",
             language: "EN",
             languageButton: "EN",
             connect: "connect",
             portfolio: "PORTFOLIO",
-            evrenpage: "EVREN PAGE",
+            evren: "EVREN PAGE",
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAS",
@@ -114,11 +116,12 @@ export default {
             notFound2: "Seite nicht gefunden.",
 
             //    Header
+            continues: "Wir arbeiten an unserer Website",
             language: "DE",
             languageButton: "DE",
             connect: "verbinden",
             portfolio: "PORTFOLIO",
-            evrenpage: "EVREN PAGE",
+            evren: "EVREN PAGE",
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAS",
@@ -163,11 +166,12 @@ export default {
             notFound1: "404",
             notFound2: "Page non trouvée.",
             //    Header
+            continues: "Nous travaillons sur notre site Web",
             language: "FR",
             languageButton: "FR",
             connect: "connecter",
             portfolio: "PORTFOLIO",
-            evrenpage: "EVREN PAGE",
+            evren: "EVREN PAGE",
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAS",

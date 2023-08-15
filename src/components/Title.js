@@ -10,17 +10,18 @@ import { useNavigate } from 'react-router-dom';
 const Title = (props) => {
     const { title } = props
     const { t } = useTranslation()
-    const isTablet = useMediaQuery(getTheme().breakpoints.down('tablet'));
+    const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
+    const isMd = useMediaQuery(getTheme().breakpoints.down('md'));
 
     const style = {
 
         typography0: {
             textAlign: "center",
-            fontSize: isTablet ? "30px" : "45px",
-            letterSpacing: isTablet ? "14px" : "20px",
+            fontSize: isSm ? "20px" : isMd ? "30px" : "80px",
+            letterSpacing: isSm ? "14px" : "20px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: DEFAULT_THEME.palette.orange,
-            pb: isTablet ? "2rem" : "6rem",
+            pb: isSm ? "2rem" : "6rem",
         },
     }
     return (

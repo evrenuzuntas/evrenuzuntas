@@ -10,7 +10,7 @@ import Title from '../components/Title';
 
 
 const Blog = (props) => {
-    const isTablet = useMediaQuery(getTheme().breakpoints.down('tablet'));
+    const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
 
     const [expanded, setExpanded] = useState(false);
 
@@ -31,7 +31,7 @@ const Blog = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "2rem" : "4rem 3rem"
+            padding: isSm ? "2rem" : "4rem 3rem"
         },
 
         accordion: {
@@ -39,7 +39,7 @@ const Blog = (props) => {
             borderRadius: '10px',
             border: '1px solid #FFBF00',
             // backgroundColor: '#F5F5F5',
-            margin: isTablet ? "0.3rem" : "1rem"
+            margin: isSm ? "0.3rem" : "1rem"
         },
     }
     const blogs = [

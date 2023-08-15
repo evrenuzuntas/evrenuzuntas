@@ -11,7 +11,7 @@ const NotFound = (props) => {
     const { t } = useTranslation()
     const favicon = document.getElementById("favicon")
     const title = document.getElementById("title")
-    const isTablet = useMediaQuery(getTheme().breakpoints.down('tablet'));
+    const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
 
     favicon.href = IMAGES.FAVICON_AUSTRAL
     document.title = ' NotFound PAGE '
@@ -20,7 +20,7 @@ const NotFound = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "2rem" : "4rem 3rem"
+            padding: isSm ? "2rem" : "4rem 3rem"
         },
     }
 

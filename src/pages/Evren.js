@@ -9,7 +9,7 @@ import { CenterFocusStrong } from '@mui/icons-material';
 
 
 const Evren = (props) => {
-    const isTablet = useMediaQuery(getTheme().breakpoints.down('tablet'));
+    const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
 
     const { t } = useTranslation()
     const favicon = document.getElementById("favicon")
@@ -23,12 +23,12 @@ const Evren = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "2rem" : "4rem"
+            padding: isSm ? "2rem" : "4rem"
         },
         typography0: {
             textAlign: "center",
-            fontSize: isTablet ? "20px" : "30px",
-            letterSpacing: isTablet ? "10px" : "30px",
+            fontSize: isSm ? "20px" : "30px",
+            letterSpacing: isSm ? "10px" : "30px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: DEFAULT_THEME.palette.black
 
@@ -37,8 +37,8 @@ const Evren = (props) => {
         typography2: {
             textAlign: "center",
             pb: "4rem",
-            fontSize: isTablet ? "18px" : "20px",
-            letterSpacing: isTablet ? "10px" : "30px",
+            fontSize: isSm ? "18px" : "20px",
+            letterSpacing: isSm ? "10px" : "30px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
             color: DEFAULT_THEME.palette.black
 

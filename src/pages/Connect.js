@@ -9,7 +9,7 @@ import Title from '../components/Title';
 
 
 const Connect = (props) => {
-    const isTablet = useMediaQuery(getTheme().breakpoints.down('tablet'));
+    const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
 
     const { t } = useTranslation()
     const favicon = document.getElementById("favicon")
@@ -23,15 +23,15 @@ const Connect = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "2rem" : "4rem 3rem"
+            padding: isSm ? "2rem" : "4rem 3rem"
         },
         typography0: {
             textAlign: "center",
-            fontSize: isTablet ? "30px" : "50px",
-            letterSpacing: isTablet ? "14px" : "20px",
+            fontSize: isSm ? "30px" : "50px",
+            letterSpacing: isSm ? "14px" : "20px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: DEFAULT_THEME.palette.orange,
-            pb: isTablet ? "2rem" : "10rem",
+            pb: isSm ? "2rem" : "10rem",
         },
 
         button: {

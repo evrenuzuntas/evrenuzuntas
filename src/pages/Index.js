@@ -9,7 +9,7 @@ import Title from '../components/Title';
 
 
 const Index = (props) => {
-    const isTablet = useMediaQuery(getTheme().breakpoints.down('tablet'));
+    const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
 
     const { t } = useTranslation()
     const favicon = document.getElementById("favicon")
@@ -23,12 +23,12 @@ const Index = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isTablet ? "2rem" : "4rem 3rem"
+            padding: isSm ? "2rem" : "4rem 3rem"
         },
         typography0: {
             textAlign: "center",
-            fontSize: isTablet ? "26px" : "80px",
-            letterSpacing: isTablet ? "14px" : "40px",
+            fontSize: isSm ? "26px" : "80px",
+            letterSpacing: isSm ? "14px" : "40px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: DEFAULT_THEME.palette.orange,
 
@@ -36,14 +36,14 @@ const Index = (props) => {
 
         typography2: {
             textAlign: "center",
-            fontSize: isTablet ? "24px" : "40px",
-            letterSpacing: isTablet ? "6px" : "40px",
+            fontSize: isSm ? "24px" : "40px",
+            letterSpacing: isSm ? "6px" : "40px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
             color: DEFAULT_THEME.palette.black
 
         },
         part1: {
-            mb: isTablet ? "2rem" : "12rem"
+            mb: isSm ? "2rem" : "12rem"
         },
         part2: {
             mb: "4rem"

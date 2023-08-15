@@ -1,10 +1,10 @@
 import { React, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { IMAGES, ROUTES } from '../utils/constants';
-import { Grid, Button } from '@mui/material';
+import { Grid, Button, Typography, useMediaQuery } from '@mui/material';
 
 // Utils
-import { DEFAULT_THEME } from "../utils/theme";
+import { DEFAULT_THEME, getTheme } from "../utils/theme";
 import { useNavigate } from 'react-router-dom';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { AiFillGithub } from "react-icons/ai";
@@ -14,6 +14,8 @@ import LanguageButton from './LanguageButton';
 const Header = (props) => {
     const { t } = useTranslation()
     const navigate = useNavigate();
+    const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
+    const isMd = useMediaQuery(getTheme().breakpoints.down('md'));
 
     const style = {
         root: {
@@ -32,40 +34,24 @@ const Header = (props) => {
     return (
         <Grid container
             direction="row"
-            justifyContent="space-around"
+            justifyContent="space-between"
             alignItems="center" sx={{ ...style.root }}>
             {/* Left */}
-            <Grid item container xs={6}>
-                <Button disableRipple sx={{ ...style.leftButton }} onClick={() => navigate(`${ROUTES.INDEX}`)}>evoloper</Button>
+            <Grid item xs={1}>
+                <Button sx={{ ...style.leftButton }} onClick={() => navigate(`${ROUTES.INDEX}`)}>evoloper</Button>
             </Grid>
 
+            {/* center */}
+            {!isMd && <Grid item xs={8}>
+                <Typography variant="h6" sx={{ color: DEFAULT_THEME.palette.white, textAlign: "center" }}> {t('continues')}</Typography>
+            </Grid>}
+
             {/* Right */}
-            <Grid item container
-                direction="row"
-                justifyContent="flex-end"
-                alignItems="center" xs={6}>
-
-                {/* instagram */}
-                {/* <Button onClick={() => window.open(`https://www.instagram.com/evrnznts.js`)}  >
-                    <InstagramIcon sx={{ color: '#ffffff', fontSize: "30px" }} />
-                </Button> */}
-
-                {/* twitter */}
-                {/* <Button onClick={() => window.open(`https://twitter.com/evoloper`)}>
-                    <FiTwitter color='#ffffff' fontSize="30px" sx={{}} />
-                </Button> */}
-
-                {/* github */}
-                {/* <Button onClick={() => window.open(`https://github.com/evrenuzuntas`)}>
-                    <AiFillGithub color='#ffffff' fontSize="30px" sx={{}} />
-                </Button> */}
-
+            <Grid item xs={1} sx={{ textAlign: "right" }}>
                 {/* Language Button */}
-                <Grid item >
-                    <LanguageButton>
-                        {t('languageButton')}
-                    </LanguageButton>
-                </Grid>
+                <LanguageButton >
+                    {t('languageButton')}
+                </LanguageButton>
             </Grid>
         </Grid>
     )

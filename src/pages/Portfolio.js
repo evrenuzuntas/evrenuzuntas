@@ -26,9 +26,11 @@ const Portfolio = (props) => {
         },
         button: {
             backgroundColor: "#FFFFFF",
+            color: DEFAULT_THEME.palette.orange,
             "&:hover": {
                 backgroundColor: DEFAULT_THEME.palette.yellow,
                 textDecoration: "underline",
+                color: DEFAULT_THEME.palette.black,
             },
         },
         buttonTypography: {
@@ -71,17 +73,20 @@ const Portfolio = (props) => {
         { name: "emergency-case-survey", link: `https://renaultdinliyor.renault.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
         { name: "renault-radiocode-web", link: `http://radyokod.renault.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
         { name: "MS Power", link: `https://www.mspower.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
+        { name: "MS Power", link: `https://www.mspower.com.tr/`, img: IMAGES.DACIA_SPRING_PW },
     ]
 
     return (
-        <Grid container sx={{ ...style.root }}>
+        <Grid container direction="row" justifyContent="center" alignItems="center" sx={{ ...style.root }}>
             <Title title={t("referenceWebsites")} />
             {links.map((item, i) => {
                 return <Grid container xs={12} md={6} xl={4}>
                     <MainCard>
                         <Button sx={{ ...style.button }} onClick={() => window.open(item.link, '_blank').focus()}>
                             <Grid item container direction="column" justifyContent="center" alignItems="center" >
-                                <img alt={'Preview'} src={item.img} width="100%" />
+                                <Grid sx={{ opacity: 0.9, "&:hover": { opacity: 1 }, }}>
+                                    <img alt={'Preview'} src={item.img} width="100%" />
+                                </Grid>
                                 <Typography sx={{ ...style.buttonTypography }}>{item.name}</Typography>
                             </Grid>
                         </Button>

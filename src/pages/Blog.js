@@ -9,6 +9,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Title from '../components/Title';
 
 
+
 const Blog = (props) => {
     const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
 
@@ -31,7 +32,9 @@ const Blog = (props) => {
         root: {
             minHeight: "900px",
             backgroundColor: "#FFFFFF",
-            padding: isSm ? "2rem" : "4rem 3rem"
+            padding: isSm ? "2rem" : "4rem 3rem",
+            zIndex: 1,
+            position: "relative"
         },
 
         accordion: {
@@ -49,6 +52,9 @@ const Blog = (props) => {
     ]
     return (
         <Grid sx={{ ...style.root }}>
+            <Grid container sx={{ maxHeight: "0vw", opacity: 0.1, }}>
+                <img src={IMAGES.TITLE_IMAGE} width="100%" ></img>
+            </Grid>
             <Title title={t("blog")} />
             {blogs.map((item, i) => {
                 return <Grid width="100%">

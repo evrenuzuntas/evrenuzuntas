@@ -4,7 +4,6 @@ import { Grid, Button, Typography, useMediaQuery } from '@mui/material';
 
 // Utils
 import { DEFAULT_THEME, getTheme } from "../utils/theme";
-import { useNavigate } from 'react-router-dom';
 
 
 const Title = (props) => {
@@ -21,7 +20,9 @@ const Title = (props) => {
             letterSpacing: isSm ? "14px" : "20px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             color: DEFAULT_THEME.palette.orange,
-            pb: isSm ? "2rem" : "6rem",
+            pb: "1.5rem",
+            zIndex: 1,
+            position: "relative",
         },
     }
     return (

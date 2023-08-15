@@ -21,6 +21,8 @@ const Footer = (props) => {
             backgroundColor: DEFAULT_THEME.palette.darkgray,
             minHeight: "4vw",
             padding: "1rem",
+            zIndex: 1,
+            position: "relative",
             // position: "absolute",
             // bottom: "0",
         },

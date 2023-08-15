@@ -12,7 +12,7 @@ const ROUTES = {
     NOT_FOUND: '/404',
     LINK_NOT_FOUND: '/',
 }
-const NAVBAR_ROUTES = ["evren", "connect", "blog", "portfolio",]
+const NAVBAR_ROUTES = ["evren", "portfolio", "blog", "connect",]
 
 
 const IMAGES = {
@@ -31,7 +31,9 @@ const IMAGES = {
     WP_LOGO: 'images/wp.png',
     // PagePreviews
     DACIA_SPRING_PW: 'images/preview/dacia_spring_pw.jpeg',
-
+    // title
+    TITLE_IMAGE: 'images/coding_background-wallpaper-2560x1440.jpg',
+    TITLE_IMAGE_DESKTOP: 'images/3635DA0E-E40A-4D5A-85F0-218BAF26BE6C.jpg',
 }
 const COOKIES = {
     AUTHORIZATION: 'authorization',

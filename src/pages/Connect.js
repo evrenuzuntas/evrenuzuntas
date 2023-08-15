@@ -61,9 +61,9 @@ const Connect = (props) => {
     const accounts = [
 
         { title: "Youtube", text: `@evoloperr`, link: "https://www.youtube.com/@evoloperr", icon: IMAGES.YT_LOGO },
-        { title: "Instagram", text: `@evoloperr`, link: "https://www.instagram.com/evoloper/", icon: IMAGES.INSTA_LOGO },
-        { title: "X", text: `@evoloperr`, link: "https://twitter.com/evoloper", icon: IMAGES.TW_LOGO },
-        { title: "Whatsapp", text: `@evoloperr`, link: "https://wa.me/+905532028484", icon: IMAGES.WP_LOGO },
+        { title: "Instagram", text: `@evoloper`, link: "https://www.instagram.com/evoloper/", icon: IMAGES.INSTA_LOGO },
+        { title: "X", text: `@evoloper`, link: "https://twitter.com/evoloper", icon: IMAGES.TW_LOGO },
+        { title: "Whatsapp", text: `Evren U.`, link: "https://wa.me/+905532028484", icon: IMAGES.WP_LOGO },
 
     ]
     return (
@@ -78,8 +78,8 @@ const Connect = (props) => {
                             alignItems="center">
                             <Button sx={{ ...style.button }} onClick={() => window.open(item.link, '_blank').focus()}>
                                 <Grid container>
-                                    <Grid xs={12} xl={6}>
-                                        <img src={item.icon} alt="icon" style={{ width: "100px", height: "100px" }} />
+                                    <Grid xs={12} xl={6} sx={{ padding: "1rem" }}>
+                                        <img src={item.icon} alt="icon" disable style={{ width: "100px", height: "100px" }} />
                                     </Grid>
                                     <Grid xs={12} xl={6} container
                                         direction="column"

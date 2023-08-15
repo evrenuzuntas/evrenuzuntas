@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { IMAGES, ROUTES } from '../utils/constants';
-import { Button, Grid, Typography, useMediaQuery } from '@mui/material';
+import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 import { DEFAULT_THEME, getTheme } from '../utils/theme';
 import MainCard from '../components/MainCard';
@@ -11,6 +11,7 @@ import Title from '../components/Title';
 const Index = (props) => {
     const isSm = useMediaQuery(getTheme().breakpoints.down('sm'));
     const isMd = useMediaQuery(getTheme().breakpoints.down('md'));
+    const isLg = useMediaQuery(getTheme().breakpoints.down('lg'));
 
     const { t } = useTranslation()
     const favicon = document.getElementById("favicon")
@@ -22,7 +23,7 @@ const Index = (props) => {
 
     const style = {
         root: {
-            minHeight: "900px",
+            minHeight: "1800px",
             backgroundColor: "#FFFFFF",
             padding: isSm ? "1rem" : isMd ? "2rem" : "3rem"
         },
@@ -37,17 +38,25 @@ const Index = (props) => {
     return (
         <Grid container sx={{ ...style.root }}>
             <Grid xs={12}>
+                {!isLg && <Grid container sx={{ maxHeight: "1vw", opacity: 1, }}>
+                    <img src={IMAGES.TITLE_IMAGE_DESKTOP} width="100%" ></img>
+                </Grid>}
                 <Title title={t("welcome")} />
-            </Grid>
-            <MainCard> <Typography sx={{ ...style.lorem }}>{t("aboutMe")}</Typography>  </MainCard>
-            <Grid item xs={12} sm={4}>
-                <MainCard> <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-                <MainCard> <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-                <MainCard><Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
+                <Grid container
+                    direction="row"
+                    justifyContent="flex-start"
+                    alignItems="center" sx={{ zIndex: 1, position: "relative" }}>
+                    <MainCard> <Typography sx={{ ...style.lorem }}>{t("aboutMe")}</Typography>  </MainCard>
+                    <Grid item xs={12} sm={4}>
+                        <MainCard> <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <MainCard> <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <MainCard><Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
     )

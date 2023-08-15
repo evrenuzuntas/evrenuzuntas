@@ -11,12 +11,13 @@ export default {
             notFound1: "404",
             notFound2: "Aradığınız sayfaya ulaşılamadı.",
             //    Header     
-            continues: "Websitemiz İçin Çalışmalar Devam Ediyor",
+            continues: "Websitemiz İçin Çalışmalar Devam Ediyor ;)",
             languageButton: "TR",
             language: "Tr",
-            connect: "İLETİŞİM",
+            connect: "SOSYAL",
             portfolio: "PORTFÖY",
             evren: "EVREN SAYFASI",
+            discover: "Keşfet",
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAŞ",
@@ -64,12 +65,13 @@ export default {
             notFound2: "Page Not Found.",
 
             //    Header   
-            continues: "We are working on our website",
+            continues: "We are working on our website ;)",
             language: "EN",
             languageButton: "EN",
-            connect: "connect",
+            connect: "SOCIAL",
             portfolio: "PORTFOLIO",
             evren: "EVREN PAGE",
+            discover: "Discover",
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAS",
@@ -116,12 +118,13 @@ export default {
             notFound2: "Seite nicht gefunden.",
 
             //    Header
-            continues: "Wir arbeiten an unserer Website",
+            continues: "Wir arbeiten an unserer Website ;)",
             language: "DE",
             languageButton: "DE",
-            connect: "verbinden",
+            connect: "SOZIAL",
             portfolio: "PORTFOLIO",
             evren: "EVREN PAGE",
+            discover: "Entdecken",
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAS",
@@ -166,12 +169,13 @@ export default {
             notFound1: "404",
             notFound2: "Page non trouvée.",
             //    Header
-            continues: "Nous travaillons sur notre site Web",
+            continues: "Nous travaillons sur notre site Web ;)",
             language: "FR",
             languageButton: "FR",
-            connect: "connecter",
+            connect: "SOCIAL",
             portfolio: "PORTFOLIO",
             evren: "EVREN PAGE",
+            discover: "Découvrir",
 
             // Index Page
             evrenUzuntas: "EVREN UZUNTAS",

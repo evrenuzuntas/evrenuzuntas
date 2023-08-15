@@ -31,10 +31,12 @@ const Navbar = (props) => {
             color: DEFAULT_THEME.palette.orange,
         },
         general: {
-            marginBottom: "10px",
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
             fontSize: isMd ? "1rem" : "1.375rem",
             justifyContent: "center",
+            "&:hover": {
+                textDecoration: isMd ? undefined : "underline",
+            },
         },
         selected: {
             marginBottom: "10px",
@@ -61,10 +63,9 @@ const Navbar = (props) => {
         accordionSummary: {
             color: DEFAULT_THEME.palette.orange,
             fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
-            marginBottom: "4px",
         },
         bottomLine: {
-            height: "2px",
+            height: "1px",
             backgroundColor: DEFAULT_THEME.palette.orange,
 
         },
@@ -118,7 +119,7 @@ const Navbar = (props) => {
                             direction="row"
                             justifyContent="space-evenly"
                             alignItems="center" >
-                            <Typography variant='h5' sx={{ ...style.accordionSummary }}>{t(`${window.location.pathname.replace("/", "")}`)}</Typography>
+                            <Typography variant='h5' sx={{ ...style.accordionSummary }}>{t(`${window.location.pathname === "/" ? window.location.pathname.replace("/", "discover") : window.location.pathname.replace("/", "")}`)}</Typography>
                         </Grid>
                     </AccordionSummary>
                     <AccordionDetails disableRipple>

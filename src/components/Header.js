@@ -37,7 +37,7 @@ const Header = (props) => {
             justifyContent="space-between"
             alignItems="center" sx={{ ...style.root }}>
             {/* Left */}
-            <Grid item xs={1}>
+            <Grid item xs={2}>
                 <Button sx={{ ...style.leftButton }} onClick={() => navigate(`${ROUTES.INDEX}`)}>evoloper</Button>
             </Grid>
 
@@ -47,7 +47,7 @@ const Header = (props) => {
             </Grid>}
 
             {/* Right */}
-            <Grid item xs={1} sx={{ textAlign: "right" }}>
+            <Grid item xs={2} sx={{ textAlign: "right" }}>
                 {/* Language Button */}
                 <LanguageButton >
                     {t('languageButton')}

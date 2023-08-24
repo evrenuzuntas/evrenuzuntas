@@ -62,13 +62,13 @@ const Youtube = (props) => {
 
     const videos = [
 
-        { code: <iframe width="560" height="315" src="https://www.youtube.com/embed/Bq7XSuiMzU4?si=11ZftjIkKwZ6GqoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
-        { code: <iframe width="560" height="315" src="https://www.youtube.com/embed/Joqev42f5MQ?si=tumai3DnOFbzrB9K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
-        { code: <iframe width="560" height="315" src="https://www.youtube.com/embed/zbKYPf29Y1s?si=SK6evi8Ur0YVa3ml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
-        { code: <iframe width="560" height="315" src="https://www.youtube.com/embed/ezsgBaZWves?si=v_APvfmUMOrfhlWl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
-        { code: <iframe width="560" height="315" src="https://www.youtube.com/embed/vwb-7e__5sI?si=0psl85EOurZPInH-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
-        { code: <iframe width="560" height="315" src="https://www.youtube.com/embed/ybbBJRDkoLo?si=0cm9kGVVG7H_WR5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
-        { code: <iframe width="560" height="315" src="https://www.youtube.com/embed/Ru3Tpk3Cp8g?si=KQWx21Tqzx7W2-L_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
+        { code: <iframe src="https://www.youtube.com/embed/Bq7XSuiMzU4?si=11ZftjIkKwZ6GqoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
+        { code: <iframe src="https://www.youtube.com/embed/Joqev42f5MQ?si=tumai3DnOFbzrB9K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
+        { code: <iframe src="https://www.youtube.com/embed/zbKYPf29Y1s?si=SK6evi8Ur0YVa3ml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
+        { code: <iframe src="https://www.youtube.com/embed/ezsgBaZWves?si=v_APvfmUMOrfhlWl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
+        { code: <iframe src="https://www.youtube.com/embed/vwb-7e__5sI?si=0psl85EOurZPInH-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
+        { code: <iframe src="https://www.youtube.com/embed/ybbBJRDkoLo?si=0cm9kGVVG7H_WR5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
+        { code: <iframe src="https://www.youtube.com/embed/Ru3Tpk3Cp8g?si=KQWx21Tqzx7W2-L_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
 
 
 
@@ -78,13 +78,13 @@ const Youtube = (props) => {
     return (
         <Grid container direction="row" justifyContent="center" alignItems="center" sx={{ ...style.root }}>
             <Title title={t("youtube")} />
-            {videos.map((item, i) => {
-                return <Grid xs={12} sm={6} md={4} >
-                    <MainCard >
+            <Grid container direction="row" justifyContent="center" alignItems="center" >
+                {videos.map((item, i) => {
+                    return <Grid sx={{ textAlign: "center", pb: "1rem" }} item sm={12} md={6} lg={4} >
                         {item.code}
-                    </MainCard>
-                </Grid>
-            })}
+                    </Grid>
+                })}
+            </Grid>
             <Grid xs={12}  >
 
 

@@ -80,7 +80,7 @@ const Youtube = (props) => {
             <Title title={t("youtube")} />
             <Grid container direction="row" justifyContent="center" alignItems="center" >
                 {videos.map((item, i) => {
-                    return <Grid sx={{ textAlign: "center", pb: "1rem" }} item sm={12} md={6} lg={4} >
+                    return <Grid sx={{ textAlign: "center", pb: "1rem", }} item sm={12} md={6} lg={4} >
                         {item.code}
                     </Grid>
                 })}

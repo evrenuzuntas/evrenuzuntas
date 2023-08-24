@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { DEFAULT_THEME, getTheme } from '../utils/theme';
 import MainCard from '../components/MainCard';
 import Title from '../components/Title';
+import SendIcon from '@mui/icons-material/Send';
 
 
 const Connect = (props) => {
@@ -43,6 +44,11 @@ const Connect = (props) => {
                 backgroundColor: "#FFFFFF",
             },
         },
+        MailButton: {
+            fontSize: "22px",
+            fontFamily: DEFAULT_THEME.typography.fontFamily,
+            color: DEFAULT_THEME.palette.orange,
+        },
         titleTypography: {
             fontSize: "16px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
@@ -57,6 +63,12 @@ const Connect = (props) => {
             "&:hover": {
                 color: DEFAULT_THEME.palette.orange,
             },
+        },
+        textMailTypography: {
+            fontSize: "22px",
+            fontFamily: DEFAULT_THEME.typography.fontFamily,
+            color: DEFAULT_THEME.palette.orange,
+            pl: "4rem",
         },
     }
 
@@ -93,26 +105,26 @@ const Connect = (props) => {
                             </Button>
                         </Grid>
                     </MainCard>
-                </Grid>
+                </Grid >
             })}
             <Grid xs={12}  >
                 <MainCard >
                     <Grid container direction="row" justifyContent="center" alignItems="center">
                         <img src={IMAGES.EMAIL_LOGO} alt="icon" disable style={{ width: "100px", height: "100px" }} />
-                        <Typography sx={{ ...style.textTypography }}>Bana Mail Gönder.</Typography>
-                        <TextField fullWidth type='text' variant="standard" placeholder="Konu" inputProps={{ maxLength: 1000 }}
+                        <Typography sx={{ ...style.textMailTypography }}>Bana Mail Gönder.</Typography>
+                        <TextField color="warning" fullWidth type='text' variant="standard" placeholder="Konu" inputProps={{ maxLength: 1000 }}
                             onChange={(event) => {
                                 setMailSubject(event.target.value)
                             }} />
-                        <TextField fullWidth type='text' variant="standard" multiline minRows={4} placeholder="Metin..." inputProps={{ maxLength: 1000 }}
+                        <TextField color="warning" fullWidth type='text' variant="standard" multiline minRows={4} placeholder="Metin..." inputProps={{ maxLength: 1000 }}
                             onChange={(event) => {
                                 setMailText(event.target.value)
                             }} />
-                        <Button sx={{ ...style.button }} onClick={() => window.open(`mailto:evrenuzuntas@gmail.com?subject=${mailSubject}&body=${mailText}`, '_blank').focus()}>MAIL GONDER</Button>
+                        <Button sx={{ ...style.MailButton }} endIcon={<SendIcon />} onClick={() => window.open(`mailto:evrenuzuntas@gmail.com?subject=${mailSubject}&body=${mailText}`, '_blank').focus()}>MAIL GONDER</Button>
                     </Grid>
                 </MainCard>
             </Grid>
-        </Grid>
+        </Grid >
     )
 }
 

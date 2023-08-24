@@ -41,10 +41,7 @@ const Header = (props) => {
                 <Button sx={{ ...style.leftButton }} onClick={() => navigate(`${ROUTES.INDEX}`)}>evoloper</Button>
             </Grid>
 
-            {/* center */}
-            {!isMd && <Grid item md={8}>
-                <Typography variant="h6" sx={{ color: DEFAULT_THEME.palette.white, textAlign: "center" }}> {t('continues')}</Typography>
-            </Grid>}
+
 
             {/* Right */}
             <Grid item md={2} xs={3} sx={{ textAlign: "right" }}>

@@ -29,6 +29,8 @@ const IMAGES = {
     INSTA_LOGO: 'images/insta.png',
     TW_LOGO: 'images/twitter.png',
     WP_LOGO: 'images/wp.png',
+    GITHUB_LOGO: 'images/github.png',
+    EMAIL_LOGO: 'images/email-logo.png',
     // PagePreviews
     DACIA_SPRING_PW: 'images/preview/dacia_spring_pw.jpeg',
     // title

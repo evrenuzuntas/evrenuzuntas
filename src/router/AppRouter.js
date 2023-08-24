@@ -12,6 +12,7 @@ import NotFound from "../pages/NotFound";
 import Footer from "../components/Footer";
 import Portfolio from "../pages/Portfolio";
 import Blog from "../pages/Blog";
+import Youtube from "../pages/Youtube";
 
 const AppRouter = () => {
     const { t } = useTranslation();
@@ -24,11 +25,12 @@ const AppRouter = () => {
         <Routes>
             <Route exact path={ROUTES.INDEX} element={<Index />} />
             <Route exact path={ROUTES.EVREN} element={<Evren />} />
-            <Route exact path={ROUTES.ASLI} element={<Asli />} />
-            <Route exact path={ROUTES.CONNECT} element={<Connect />} />
-            <Route exact path={ROUTES.BLOG} element={<Blog />} />
             <Route exact path={ROUTES.PORTFOLİO} element={<Portfolio />} />
+            <Route exact path={ROUTES.BLOG} element={<Blog />} />
+            <Route exact path={ROUTES.CONNECT} element={<Connect />} />
+            <Route exact path={ROUTES.YOUTUBE} element={<Youtube />} />
             <Route exact path={ROUTES.NOT_FOUND} element={<NotFound />} />
+            <Route exact path={ROUTES.ASLI} element={<Asli />} />
 
             <Route path="*" element={<Navigate to="404" replace />} />
         </Routes>

@@ -68,7 +68,6 @@ const Connect = (props) => {
         { title: "X", text: `@evoloper`, link: "https://twitter.com/evoloper", icon: IMAGES.TW_LOGO },
         { title: "Whatsapp", text: `Evren U.`, link: "https://wa.me/+905532028484", icon: IMAGES.WP_LOGO },
         { title: "GitHub", text: `evrenuzuntas`, link: "https://github.com/evrenuzuntas", icon: IMAGES.GITHUB_LOGO },
-        { title: "E-Mail", text: `evrenuzuntas@gmail.com`, link: "mailto:evrenuzuntas@gmail.com?subject=&body=", icon: IMAGES.EMAIL_LOGO },
 
     ]
     return (

@@ -55,6 +55,9 @@ export default {
             //Blog
             blog: "BLOG",
 
+            //Youtube
+            youtube: "YOUTUBE",
+
         }
     },
 
@@ -109,6 +112,9 @@ export default {
 
             //Blog
             blog: "BLOG",
+
+            //Youtube
+            youtube: "YOUTUBE",
         }
     },
 
@@ -162,6 +168,9 @@ export default {
             //Blog
             blog: "BLOG",
 
+            //Youtube
+            youtube: "YOUTUBE",
+
         }
     },
     fr: {
@@ -211,6 +220,9 @@ export default {
 
             //Blog
             blog: "BLOG",
+
+            //Youtube
+            youtube: "YOUTUBE",
 
         }
     }

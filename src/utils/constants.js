@@ -3,16 +3,17 @@
 const DEFAULT_LANGUAGE = 'en';
 
 const ROUTES = {
-    ASLI: 'asli',
     EVREN: 'evren',
-    CONNECT: 'connect',
-    BLOG: 'blog',
     PORTFOLİO: 'portfolio',
+    BLOG: 'blog',
+    CONNECT: 'connect',
+    YOUTUBE: 'youtube',
     INDEX: '/',
     NOT_FOUND: '/404',
     LINK_NOT_FOUND: '/',
+    ASLI: 'asli',
 }
-const NAVBAR_ROUTES = ["evren", "portfolio", "blog", "connect",]
+const NAVBAR_ROUTES = ["evren", "portfolio", "blog", "connect", "youtube",]
 
 
 const IMAGES = {

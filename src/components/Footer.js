@@ -5,7 +5,6 @@ import { Grid, Button, useMediaQuery, Typography } from '@mui/material';
 
 // Utils
 import { DEFAULT_THEME, getTheme } from "../utils/theme";
-import { useNavigate } from 'react-router-dom';
 
 
 const Footer = (props) => {

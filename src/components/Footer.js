@@ -10,7 +10,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Footer = (props) => {
     const { t } = useTranslation()
-    const navigate = useNavigate();
     const isMd = useMediaQuery(getTheme().breakpoints.down('md'));
 
 

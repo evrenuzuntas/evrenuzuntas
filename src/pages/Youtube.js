@@ -69,9 +69,6 @@ const Youtube = (props) => {
         { code: <iframe src="https://www.youtube.com/embed/vwb-7e__5sI?si=0psl85EOurZPInH-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
         { code: <iframe src="https://www.youtube.com/embed/ybbBJRDkoLo?si=0cm9kGVVG7H_WR5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
         { code: <iframe src="https://www.youtube.com/embed/Ru3Tpk3Cp8g?si=KQWx21Tqzx7W2-L_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> },
-
-
-
     ]
 
 

@@ -6,11 +6,7 @@ import { Grid, Button, useMediaQuery, Typography } from '@mui/material';
 // Utils
 import { DEFAULT_THEME, getTheme } from "../utils/theme";
 import { useNavigate } from 'react-router-dom';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import { AiFillGithub } from "react-icons/ai";
-import { FiTwitter } from "react-icons/fi";
-import { HiOutlineMail } from "react-icons/hi";
-import LanguageButton from './LanguageButton';
+
 
 const Footer = (props) => {
     const { t } = useTranslation()

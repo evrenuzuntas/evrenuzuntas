@@ -13,6 +13,8 @@ import Footer from "../components/Footer";
 import Portfolio from "../pages/Portfolio";
 import Blog from "../pages/Blog";
 import Youtube from "../pages/Youtube";
+import Card from "../pages/Card";
+
 
 const AppRouter = () => {
     const { t } = useTranslation();
@@ -31,6 +33,7 @@ const AppRouter = () => {
             <Route exact path={ROUTES.YOUTUBE} element={<Youtube />} />
             <Route exact path={ROUTES.NOT_FOUND} element={<NotFound />} />
             <Route exact path={ROUTES.ASLI} element={<Asli />} />
+            <Route exact path={ROUTES.CARD} element={<Card />} />
 
             <Route path="*" element={<Navigate to="404" replace />} />
         </Routes>

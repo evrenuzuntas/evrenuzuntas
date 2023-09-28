@@ -58,6 +58,10 @@ export default {
             //Youtube
             youtube: "YOUTUBE",
 
+            //Business Card
+            card: "KARTVİZİT",
+            callme: "Beni arayın",
+            neededwebsite: "İhtiyacınız olan web sitesini yapmak için benimle iletişime geçin.",
         }
     },
 
@@ -115,6 +119,11 @@ export default {
 
             //Youtube
             youtube: "YOUTUBE",
+
+            //Business Card
+            card: "BUSINESS CARD",
+            callme: "Call me",
+            neededwebsite: "Contact me to make the website you need.",
         }
     },
 
@@ -171,6 +180,12 @@ export default {
             //Youtube
             youtube: "YOUTUBE",
 
+            //Business Card
+            card: "VISITENKARTE",
+            callme: "Rufen Sie mich an",
+            neededwebsite: "Kontaktieren Sie mich, um die Website zu erstellen, die Sie benötigen.",
+
+
         }
     },
     fr: {
@@ -223,6 +238,11 @@ export default {
 
             //Youtube
             youtube: "YOUTUBE",
+
+            //Business Card
+            card: "CARTE DE VISITE",
+            callme: "Appelez-moi",
+            neededwebsite: "Contactez-moi pour créer le site Web dont vous avez besoin.",
 
         }
     }

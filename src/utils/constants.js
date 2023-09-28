@@ -1,6 +1,6 @@
 
 
-const DEFAULT_LANGUAGE = 'en';
+const DEFAULT_LANGUAGE = 'tr';
 
 const ROUTES = {
     EVREN: 'evren',
@@ -12,6 +12,7 @@ const ROUTES = {
     NOT_FOUND: '/404',
     LINK_NOT_FOUND: '/',
     ASLI: 'asli',
+    CARD: 'card',
 }
 const NAVBAR_ROUTES = ["evren", "portfolio", "blog", "connect", "youtube",]
 

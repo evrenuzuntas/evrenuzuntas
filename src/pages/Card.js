@@ -83,7 +83,7 @@ const Card = (props) => {
     const accounts = [
 
         { title: "Whatsapp", text: `Evren U.`, link: "https://wa.me/+905532028484", icon: IMAGES.WP_LOGO },
-        { title: "callme", text: `Evren Uzuntas`, link: "tel://+6199942413", icon: IMAGES.WP_LOGO },
+        { title: "callme", text: `Evren Uzuntas`, link: "tel://+905532028484", icon: IMAGES.WP_LOGO },
 
     ]
     return (

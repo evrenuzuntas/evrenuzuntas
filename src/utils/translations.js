@@ -23,6 +23,7 @@ export default {
             evrenUzuntas: "EVREN UZUNTAŞ",
             softwareDeveloper: "YAZILIM GELİŞTİRİCİ",
             aboutMe: "Kendimi hırslı, sorumluluk sahibi ve çalışkan biri olarak tanımlarım. Hayatımı uzun bir yolculuk olarak görüyorum ve bu yolculuktan her yönüyle en iyi şekilde yararlanmak en büyük hedefim. Yeni beceriler öğrenmeye çok meraklı ve hevesliyim. Elektronik ve programlama ile ilgileniyorum. Seyahat, teknoloji ve sporla da ilgileniyorum. ",
+            aboutMe2: "unmanned aerial vehicle(drone) commercial pilot certificate / dog groomer and walker certificate / 3D printer training, product printing and creating products with epoxy / Short Range Radio Operator certificate / Amateur sailor certificate / Arduino usage and software also making smart systems with them / Youtube content creator and product reviews. ",
             welcome: "HOŞGELDİNİZ",
             loremipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget mollis ipsum. Quisque consequat vestibulum faucibus. Proin laoreet egestas lorem, vitae vestibulum turpis vehicula a. Nulla sed augue maximus, faucibus quam ut, posuere purus. Nulla consequat arcu ut diam aliquam lobortis. Pellentesque eu mi magna. Aenean quis enim ac lorem placerat lobortis. Nulla sed dui vestibulum consequat cursus justo. Duis nulla est, vehicula sit amet est sit amet, cursus congue nunc.",
 

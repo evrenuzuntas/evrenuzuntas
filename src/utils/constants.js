@@ -5,6 +5,8 @@ const DEFAULT_LANGUAGE = 'tr';
 const ROUTES = {
     EVREN: 'evren',
     PORTFOLİO: 'portfolio',
+    TRID: '3D',
+    DRONE: 'drone',
     BLOG: 'blog',
     CONNECT: 'connect',
     YOUTUBE: 'youtube',
@@ -14,7 +16,7 @@ const ROUTES = {
     ASLI: 'asli',
     CARD: 'card',
 }
-const NAVBAR_ROUTES = ["evren", "portfolio", "blog", "connect", "youtube",]
+const NAVBAR_ROUTES = ["3D", "evren", "portfolio", "blog", "connect", "youtube", "DRONE"]
 
 
 const IMAGES = {

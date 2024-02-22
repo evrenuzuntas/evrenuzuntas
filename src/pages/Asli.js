@@ -18,7 +18,7 @@ const Asli = (props) => {
 
     return (
         <Grid >
-            <Title title={t("SENİ ÇOK SEVİYORUM AŞKIMM")} />
+            <Title title={t("Güzelimmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm")} />
         </Grid>
     )
 }

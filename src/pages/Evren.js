@@ -108,6 +108,9 @@ const Evren = (props) => {
                     <MainCard>
                         <Typography sx={{ ...style.typography3 }}>{t("aboutMe")}</Typography>
                     </MainCard>
+                    <MainCard>
+                        <Typography sx={{ ...style.typography3 }}>{t("aboutMe2")}</Typography>
+                    </MainCard>
                 </Grid>
             </Grid>
 
@@ -183,12 +186,14 @@ const Evren = (props) => {
                     <Typography sx={{ ...style.typographyDate }}>{t("Sep 2015 - Dec 2021")}</Typography>
                 </Grid>
             </MainCard>
-
-            <Typography sx={{ ...style.typographyTitle }}>Cv örneğini indirmek için
-                <a href="EvrenUzuntas - Cv.pdf" download="EvrenUzuntas - Cv">
-                    {t(" tıklayınız.")}
-                </a>
-            </Typography>
+            <Grid container direction="row" justifyContent="center" alignItems="flex-start">
+                <Typography sx={{ ...style.typographyTitle }}>Logolara tıklayarak kurum web sitelerine gidebilirsiniz.</Typography>
+                <Typography sx={{ ...style.typographyTitle }}>Cv örneğini indirmek için
+                    <a href="EvrenUzuntas - Cv.pdf" download="EvrenUzuntas - Cv">
+                        {t(" tıklayınız.")}
+                    </a>
+                </Typography>
+            </Grid>
 
 
         </Grid>

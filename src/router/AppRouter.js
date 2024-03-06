@@ -15,6 +15,7 @@ import Blog from "../pages/Blog";
 import Youtube from "../pages/Youtube";
 import Card from "../pages/Card";
 import PiFlow3D from "../pages/3D";
+import Drone from "../pages/Drone";
 
 
 const AppRouter = () => {
@@ -36,7 +37,7 @@ const AppRouter = () => {
             <Route exact path={ROUTES.ASLI} element={<Asli />} />
             <Route exact path={ROUTES.CARD} element={<Card />} />
             <Route exact path={ROUTES.TRID} element={<PiFlow3D />} />
-            <Route exact path={ROUTES.DRONE} element={<PiFlow3D />} />
+            <Route exact path={ROUTES.DRONE} element={<Drone />} />
 
 
             <Route path="*" element={<Navigate to="404" replace />} />

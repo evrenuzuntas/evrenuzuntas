@@ -16,7 +16,7 @@ const ROUTES = {
     ASLI: 'asli',
     CARD: 'card',
 }
-const NAVBAR_ROUTES = ["3D", "evren", "portfolio", "blog", "connect", "youtube", "DRONE"]
+const NAVBAR_ROUTES = ["3D", "evren", "portfolio", "blog", "connect", "youtube", "drone"]
 
 
 const IMAGES = {

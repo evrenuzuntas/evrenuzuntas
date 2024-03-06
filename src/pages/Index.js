@@ -47,7 +47,7 @@ const Index = (props) => {
                     justifyContent="flex-start"
                     alignItems="center" sx={{ zIndex: 1, position: "relative" }}>
                     <MainCard> <Typography sx={{ ...style.lorem }}>{t("aboutMe")}</Typography>  </MainCard>
-                    <Grid item xs={12} sm={4}>
+                    {/* <Grid item xs={12} sm={4}>
                         <MainCard> <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
                     </Grid>
                     <Grid item xs={12} sm={4}>
@@ -55,7 +55,7 @@ const Index = (props) => {
                     </Grid>
                     <Grid item xs={12} sm={4}>
                         <MainCard><Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
-                    </Grid>
+                    </Grid> */}
                 </Grid>
             </Grid>
         </Grid>

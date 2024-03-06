@@ -16,6 +16,7 @@ export default {
             language: "Tr",
             connect: "SOSYAL",
             portfolio: "PORTFÖY",
+            drone: "DRONE",
             evren: "EVREN SAYFASI",
             discover: "Keşfet",
 

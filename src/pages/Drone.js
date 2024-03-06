@@ -8,7 +8,7 @@ import MainCard from '../components/MainCard';
 import Title from '../components/Title';
 
 
-const PiFlow3D = (props) => {
+const Drone = (props) => {
     const isMd = useMediaQuery(getTheme().breakpoints.down('md'));
 
     const { t } = useTranslation()
@@ -46,11 +46,9 @@ const PiFlow3D = (props) => {
 
     return (
         <Grid container direction="row" justifyContent="center" alignItems="flex-start" sx={{ ...style.root }}>
-            <Title title={t("PiFlow 3D")} />
-            <Button sx={{ ...style.textTypography }} onClick={() => window.open("https://www.instagram.com/piflow3d/", '_blank').focus()}>PiFlow3D.com</Button>
-            {/* <Button sx={{ ...style.textTypography }} onClick={() => window.open("https://www.instagram.com/piflow3d/", '_blank').focus()}>PiFlow3D.com</Button> */}
+            <img src={IMAGES.COMING_SOON} width="100%"></img>
         </Grid>
     )
 }
 
-export default PiFlow3D;
+export default Drone;

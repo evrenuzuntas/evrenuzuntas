@@ -30,7 +30,7 @@ const PiFlow3D = (props) => {
         },
 
         textTypography: {
-            fontSize: "36px",
+            fontSize: "20px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
             color: DEFAULT_THEME.palette.orange,
             letterSpacing: "20px",

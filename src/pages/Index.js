@@ -31,9 +31,16 @@ const Index = (props) => {
             // fontSize: "40px",
             fontFamily: DEFAULT_THEME.typography.fontFamily,
             color: DEFAULT_THEME.palette.black
-
         },
-
+        textTypography: {
+            fontSize: "20px",
+            fontFamily: DEFAULT_THEME.typography.fontFamily,
+            color: DEFAULT_THEME.palette.orange,
+            letterSpacing: "20px",
+            "&:hover": {
+                color: DEFAULT_THEME.palette.orange,
+            },
+        },
     }
     return (
         <Grid container sx={{ ...style.root }}>
@@ -42,12 +49,10 @@ const Index = (props) => {
                     <img src={IMAGES.TITLE_IMAGE_DESKTOP} width="100%" ></img>
                 </Grid>}
                 <Title title={t("welcome")} />
-                <Grid container
-                    direction="row"
-                    justifyContent="flex-start"
-                    alignItems="center" sx={{ zIndex: 1, position: "relative" }}>
-                    <MainCard> <Typography sx={{ ...style.lorem }}>{t("aboutMe")}</Typography>  </MainCard>
-                    {/* <Grid item xs={12} sm={4}>
+                <Grid container direction="row" justifyContent="center" alignItems="flex-start" sx={{ ...style.root }}>
+                    <Button sx={{ ...style.textTypography, justifyContent: "center", }} onClick={() => window.open("https://www.instagram.com/piflow3d/", '_blank').focus()}>PiFlow3D.com</Button>
+                </Grid>
+                {/* <Grid item xs={12} sm={4}>
                         <MainCard> <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
                     </Grid>
                     <Grid item xs={12} sm={4}>
@@ -56,7 +61,7 @@ const Index = (props) => {
                     <Grid item xs={12} sm={4}>
                         <MainCard><Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
                     </Grid> */}
-                </Grid>
+
             </Grid>
         </Grid>
     )

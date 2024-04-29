@@ -23,46 +23,32 @@ const Index = (props) => {
 
     const style = {
         root: {
-            minHeight: "1800px",
+            minHeight: "800px",
             backgroundColor: "#FFFFFF",
             padding: isSm ? "1rem" : isMd ? "2rem" : "3rem"
         },
-        lorem: {
-            // fontSize: "40px",
-            fontFamily: DEFAULT_THEME.typography.fontFamily,
-            color: DEFAULT_THEME.palette.black
-        },
         textTypography: {
             fontSize: "20px",
-            fontFamily: DEFAULT_THEME.typography.fontFamily,
-            color: DEFAULT_THEME.palette.orange,
+            fontFamily: DEFAULT_THEME.typography.fontFamilyBold,
+            color: DEFAULT_THEME.palette.black,
+            backgroundColor: DEFAULT_THEME.palette.orange,
             letterSpacing: "20px",
+            mb: "3rem",
             "&:hover": {
                 color: DEFAULT_THEME.palette.orange,
+                backgroundColor: DEFAULT_THEME.palette.black,
             },
         },
     }
     return (
-        <Grid container sx={{ ...style.root }}>
-            <Grid xs={12}>
-                {!isLg && <Grid container sx={{ maxHeight: "1vw", opacity: 1, }}>
-                    <img src={IMAGES.TITLE_IMAGE_DESKTOP} width="100%" ></img>
-                </Grid>}
-                <Title title={t("welcome")} />
-                <Grid container direction="row" justifyContent="center" alignItems="flex-start" sx={{ ...style.root }}>
-                    <Button sx={{ ...style.textTypography, justifyContent: "center", }} onClick={() => window.open("https://www.instagram.com/piflow3d/", '_blank').focus()}>PiFlow3D.com</Button>
-                </Grid>
-                {/* <Grid item xs={12} sm={4}>
-                        <MainCard> <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
-                    </Grid>
-                    <Grid item xs={12} sm={4}>
-                        <MainCard> <Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
-                    </Grid>
-                    <Grid item xs={12} sm={4}>
-                        <MainCard><Typography sx={{ ...style.lorem }}>{t("loremipsum")}</Typography> </MainCard>
-                    </Grid> */}
+        <Grid container
+            direction="column"
+            justifyContent="flex-start"
+            alignItems="center" sx={{ ...style.root }}>
 
-            </Grid>
+            <Title title={t("3D Baskılar İçin")} />
+            <Button variant='contained' sx={{ ...style.textTypography, }} onClick={() => window.open("https://www.instagram.com/piflow3d/", '_blank').focus()}>PiFlow3D.com</Button>
+            <img width="150rem" src='./images/piflow-qrcode.png'></img>
         </Grid>
     )
 }

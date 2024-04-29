@@ -23,7 +23,7 @@ const Index = (props) => {
 
     const style = {
         root: {
-            minHeight: "800px",
+
             backgroundColor: "#FFFFFF",
             padding: isSm ? "1rem" : isMd ? "2rem" : "3rem"
         },

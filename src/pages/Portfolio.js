@@ -20,7 +20,6 @@ const Portfolio = (props) => {
 
     const style = {
         root: {
-            minHeight: "900px",
             backgroundColor: "#FFFFFF",
             padding: isSm ? "2rem" : "4rem 3rem"
         },

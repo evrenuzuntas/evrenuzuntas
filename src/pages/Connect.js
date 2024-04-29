@@ -25,7 +25,6 @@ const Connect = (props) => {
 
     const style = {
         root: {
-            minHeight: "900px",
             backgroundColor: "#FFFFFF",
             padding: isMd ? "2rem" : "4rem 3rem"
         },

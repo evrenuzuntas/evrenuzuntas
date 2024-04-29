@@ -5,11 +5,11 @@ const DEFAULT_LANGUAGE = 'tr';
 const ROUTES = {
     EVREN: 'evren',
     PORTFOLİO: 'portfolio',
-    // TRID: '3D',
-    // DRONE: 'drone',
-    // BLOG: 'blog',
+    TRID: '3D',
+    DRONE: 'drone',
+    BLOG: 'blog',
     CONNECT: 'connect',
-    // YOUTUBE: 'youtube',
+    YOUTUBE: 'youtube',
     INDEX: '/',
     NOT_FOUND: '/404',
     LINK_NOT_FOUND: '/',
@@ -19,7 +19,7 @@ const ROUTES = {
 const NAVBAR_ROUTES = [
     "evren", "portfolio",
     "connect",
-    // "blog", "drone",  "youtube","3D", 
+    "blog", "drone", "youtube", "3D",
 ]
 
 

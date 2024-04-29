@@ -24,7 +24,6 @@ const Drone = (props) => {
 
     const style = {
         root: {
-            minHeight: "900px",
             backgroundColor: "#FFFFFF",
             padding: "4rem ",
         },

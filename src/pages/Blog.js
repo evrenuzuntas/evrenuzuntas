@@ -30,11 +30,8 @@ const Blog = (props) => {
 
     const style = {
         root: {
-            minHeight: "900px",
             backgroundColor: "#FFFFFF",
             padding: isSm ? "2rem" : "4rem 3rem",
-            zIndex: 1,
-            position: "relative"
         },
 
         accordion: {
@@ -47,14 +44,11 @@ const Blog = (props) => {
     }
     const blogs = [
 
-        { title: "Kuryeye qr", text: `Multinet ile kapıda ödeme yaparken telefon çekmiyo, Onları hemen wifi nin misafir moduna bağlıyorum multinet çekiyo sonra modem atıyo onları || Multinet ile kapıda ödeme yaparken telefon çekmiyo, Onları hemen wifi nin misafir moduna bağlıyorum multinet çekiyo sonra modem atıyo onları ` },
-        { title: "22222222", text: `Mtest sajıhfadhkfjkdkjlfskdjfslunsfasfsdfdem atdaıyo odasdasddasasdasdasdnları` },
+        // { title: "Kuryeye qr", text: `Multinet ile kapıda ödeme yaparken telefon çekmiyo, Onları hemen wifi nin misafir moduna bağlıyorum multinet çekiyo sonra modem atıyo onları || Multinet ile kapıda ödeme yaparken telefon çekmiyo, Onları hemen wifi nin misafir moduna bağlıyorum multinet çekiyo sonra modem atıyo onları ` },
+        { title: "22222222", text: `TEst Test TEST TesT` },
     ]
     return (
         <Grid sx={{ ...style.root }}>
-            <Grid container sx={{ maxHeight: "0vw", opacity: 0.1, }}>
-                <img src={IMAGES.TITLE_IMAGE} width="100%" ></img>
-            </Grid>
             <Title title={t("blog")} />
             {blogs.map((item, i) => {
                 return <Grid width="100%">
